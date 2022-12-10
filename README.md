@@ -16,11 +16,11 @@ Made in the course:
 
 *10.12.2022 -  Demo version released*
 
-Download source: [link coming]()
+Download source, if you need it in zip format: [.zip](https://github.com/therealhalonen/domain_control/archive/refs/heads/master.zip)
 
 ## Usage instructions:
 
-**Please start by reading the [REPORT]**   
+**Please start by reading the [REPORT](https://github.com/therealhalonen/configuration_management_systems/blob/master/h7/report.md)**   
 
 For this to work as its meant to, you need:   
 ( also minion config stuff is in the list)
@@ -94,7 +94,7 @@ sudo salt '*' state.apply
 ```
 And all states should be ran.   
 
-See [Testing]() for example outcome.  
+See [Testing](https://github.com/therealhalonen/configuration_management_systems/blob/master/h7/project_testing.md) for example outcome.  
 
 ## Optional features:
 
@@ -188,7 +188,3 @@ Error means, it hasnt registered which `saltenv` it belongs to, and will do it w
 
 **More:**   
 *Coming if something appear*
-
-
-
-
