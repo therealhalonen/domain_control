@@ -7,7 +7,7 @@
 Control stuff with [Saltstack](https://saltproject.io/)   
 
 Made in the course:    
-[Configuration Management Systems by Tero Karvinen]()
+[Configuration Management Systems by Tero Karvinen](https://terokarvinen.com/2022/palvelinten-hallinta-2022p2/)
 
 **Current Version: Release / Demo**
 - Sources released.
