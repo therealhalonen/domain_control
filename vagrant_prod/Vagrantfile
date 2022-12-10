@@ -1,0 +1,112 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# Sources:
+# https://gist.github.com/santrancisco/a7183470efa0e3412222670d0bfb3da5
+# Tero Karvinen Himself and; https://terokarvinen.com/2018/automatically-provision-vagrant-virtualmachines-as-salt-slaves/
+# Niko Heiskanen: https://heiskanen.rocks/server_management/h1 
+
+# Provision Servers
+$linux = <<LINUX
+apt update -y
+sudo apt install bash-completion -y
+apt install salt-minion -qy
+sed -i 's/\#master\:.*/master\:\ 192.168.56.1/g' /etc/salt/minion
+echo 'saltenv: prod'|sudo tee -a /etc/salt/minion
+systemctl restart salt-minion
+LINUX
+
+# Provision Windows
+$windows= <<WINDOWS
+echo Downloading and Installing Salt-Minion.
+echo This will take a while, so dont worry!
+powershell.exe -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 
+Invoke-WebRequest -Uri 'https://repo.saltproject.io/windows/Salt-Minion-3004.2-1-Py3-AMD64.msi' -OutFile 'C:/Users/IEUser/Salt-Minion-3004.2-1-Py3-AMD64.msi';
+msiexec /i Salt-Minion-3004.2-1-Py3-AMD64.msi /quiet /norestart MASTER=192.168.56.1 MINION_ID=windows-ws START_MINION=\"\""
+echo Downloaded... Installing!
+echo This will still take atleast 1min....
+waitfor WINDOWStoConfigureSalt /t 60 2>NUL
+powershell.exe -InputFormat None -NoProfile -ExecutionPolicy Bypass -Command "Add-Content -Path 'C:\\ProgramData\\Salt Project\\Salt\\conf\\minion' -Value 'saltenv: prod'"
+echo All done, Salt-Minion started.
+WINDOWS
+Vagrant.configure(2) do |config|
+
+  # Webserver
+  config.vm.define "webserver" do |ws|
+    ws.vm.box = "debian/bullseye64"
+    ws.vm.hostname = "webserver"
+    ws.vm.network :private_network, ip: "192.168.56.10"
+    ws.vm.provision "shell", inline: $linux
+	ws.vm.synced_folder '.', '/vagrant', disabled: true
+    ws.vm.provider :virtualbox do |vb|
+      vb.name = "Webserver"
+	  vb.memory = 512
+      vb.cpus = 1
+	  vb.customize ["modifyvm", :id, "--vram", "8"]
+    end
+  end    
+  # Filerserver
+  config.vm.define "fileserver" do |fs|
+    fs.vm.box = "debian/bullseye64"
+    fs.vm.hostname = "fileserver"
+    fs.vm.network :private_network, ip: "192.168.56.11"
+    fs.vm.provision "shell", inline: $linux
+	fs.vm.synced_folder '.', '/vagrant', disabled: true
+    fs.vm.provider :virtualbox do |vb|
+      vb.name = "Fileserver"
+	  vb.memory = 512
+      vb.cpus = 1
+	  vb.customize ["modifyvm", :id, "--vram", "8"]
+    end
+  end
+  
+  # Ubuntu - Workstation
+  config.vm.define "ubuntu-ws" do |ubuntu|
+    ubuntu.vm.box = "fasmat/ubuntu2204-desktop"
+    ubuntu.vm.box_version = "22.0509.1"
+    ubuntu.vm.hostname = "ubuntu-ws"
+    ubuntu.vm.network :private_network, ip: "192.168.56.101"
+    ubuntu.vm.provision "shell", inline: $linux
+	ubuntu.vm.synced_folder '.', '/vagrant', disabled: true
+    ubuntu.vm.provider :virtualbox do |vb|
+	  vb.linked_clone = false
+      vb.name = "Ubuntu-Ws"
+	  vb.memory = 1028
+      vb.cpus = 2
+      vb.customize ["modifyvm", :id, "--graphicscontroller", "vmsvga"]
+	  vb.customize ["modifyvm", :id, "--vram", "32"]
+	  vb.gui = false
+    end
+  end  
+  # Windows - Workstation
+  config.vm.define "windows-ws" do |window|  
+
+  # Basic
+	window.vm.box = "Microsoft/EdgeOnWindows10"
+	window.vm.guest = :windows 
+	window.vm.synced_folder '.', '/vagrant', disabled: true
+
+  # Network
+	window.vm.network :private_network, ip: "192.168.56.102", auto_config: false
+	
+  # Config SSH
+	window.ssh.username="IEUser"
+	window.ssh.password="Passw0rd!"
+	window.ssh.insert_key = false
+	window.ssh.sudo_command = ''
+	window.ssh.shell = 'sh -l'
+
+  # Machine stuff
+    window.vm.provider :virtualbox do |vb|
+      vb.name = "Windows-WS"
+	  vb.memory = 4096
+      vb.cpus = 2
+      vb.customize ["modifyvm", :id, "--graphicscontroller", "vboxsvga"]
+	  vb.customize ["modifyvm", :id, "--vram", "128"]
+	  vb.gui = false
+	end
+
+  # Install and configure Salt-Minion
+  	window.vm.provision "shell", privileged: false, inline: $windows
+	end
+end

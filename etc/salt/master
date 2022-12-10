@@ -1,0 +1,34 @@
+# My current, Salt-master configs.
+
+# Define fileserver backend.
+fileserver_backend:
+  - roots
+
+# Define Salt Environments.
+file_roots:
+  base:
+    - /srv/salt
+  prod:
+    - /srv/salt/prod
+    - /srv/salt
+  dev:
+    - /srv/salt/dev
+    - /srv/salt
+
+# Define pillar, so that all pillars are in same path.
+pillar_roots:
+  __env__:
+    - /srv/pillar
+
+# Define default top-file path
+default_top: base
+
+# Define win-repo location and Disable legacy win-repo
+winrepo_remotes: []
+winrepo_dir_ng: '/srv/salt/prod/win/repo-ng'
+
+# Define groups for machines to apply states to.
+nodegroups:
+  - servers: '*server*'
+  - workstations: 'ubuntu-ws, windows-ws, dev-fedora-ws'
+  - linux: 'G@kernel:Linux'

@@ -1,0 +1,2 @@
+#!/bin/bash
+salt-run winrepo.update_git_repos

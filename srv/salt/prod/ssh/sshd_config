@@ -1,0 +1,8 @@
+# These configs are made to replace Vagrant configs.
+Include /etc/ssh/sshd_config.d/*.conf
+
+# Replace port
+Port 8888
+
+# You may want to change this user later.
+AllowUsers supreme

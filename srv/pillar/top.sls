@@ -1,0 +1,3 @@
+{{ saltenv }}:
+  '*':
+    - secret_stuff
