@@ -98,8 +98,8 @@ See [Testing](https://github.com/therealhalonen/configuration_management_systems
 
 ## Optional features:
 
-**Vagrant, Virtualbox environment:**
-```vagrant_prod``` folder holds the Vagrantfile for Production machines.
+**Vagrant, Virtualbox environment:**   
+```vagrant_prod``` folder holds the Vagrantfile for Production machines.   
 ```vagrant_dev``` folder holds the Vagrantfile for Development machines.   
 
 Each machine is configured to install `salt-minion` and connect to a Master to address `192.168.56.1`, which in my case is the virtualbox host-only adapter address of my Host.   
