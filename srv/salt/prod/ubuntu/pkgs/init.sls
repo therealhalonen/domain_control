@@ -18,11 +18,19 @@ needed_packages:
 # Security
       - pwgen
 
-install_firefox_esr:
-  pkgrepo.managed:
-    - name: ppa:mozillateam/ppa
-    - dist: precise
-    - file: /etc/apt/sources.list.d/mozillateam.list
+# BUG IN SALT: https://github.com/saltstack/salt/issues/59065
+#  pkgrepo.managed:
+#    - name: ppa:mozillateam/ppa
+#    - dist: precise
+#    - file: /etc/apt/sources.list.d/mozillateam.list
+# NOT WORKING AT THE MOMENT
+
+# Workaround by: 
+# https://github.com/miljonka/miniproject/blob/main/Starterpack/init.sls
+add_firefox_repo:
+  cmd.run:
+    - name: sudo add-apt-repository -y ppa:mozillateam/ppa
+    - creates: /etc/apt/sources.list.d/mozillateam-ubuntu-ppa-jammy.list
 
 firefox:
   pkg.purged
