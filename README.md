@@ -88,7 +88,19 @@ sudo salt-run winrepo.update_git_repos
 Or you can use the included script `srv/salt/update_winrepo_ng`   
 The database sync, will be made automatically during the state apply
 
-At this point, you should have the machines configured as minions and you can run:   
+Next change the passwords found in the [Pillar](https://github.com/therealhalonen/domain_control/blob/master/srv/pillar/secret_stuff.sls):
+- regular is for user `sicki`
+- superior is for admin-user `supreme`
+- samba is for `sambauser`   
+
+`regular` and `superior` are generated with:
+```
+openssl passwd -6 <password>
+```
+For samba:    
+I used some random online generator, as i couldnt find how i could create NTML hashes.
+
+Then you should have the machines configured as minions and everything should be set, so you can run:   
 ```bash
 sudo salt '*' state.apply
 ```
