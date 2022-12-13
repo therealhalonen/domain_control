@@ -132,7 +132,18 @@ More info:
 
 ## Troubleshooting
 
-**Vagrant:**
+### Vagrant:
+
+**SSH:**   
+So if using Vagrant, after applying the states, the regular:
+```bash
+vagrant ssh <machine>
+```
+isnt obviously working anymore, as the sshd config is replaced.   
+But you can of course use: 
+```
+ssh supreme@<address>
+```
 
 **Windows**:   
 If you see this while creating the Windows machine for Vagrant:
