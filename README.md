@@ -98,7 +98,7 @@ Next change the passwords found in the [Pillar](https://github.com/therealhalone
 openssl passwd -6 <password>
 ```
 For samba:    
-I used some random online generator, as i couldnt find how i could create NT hashes, as i suppose they shouldnt be even used...
+I used some random online generator, as i couldnt find how i could create NTML hashes.
 
 Then you should have the machines configured as minions and everything should be set, so you can run:   
 ```bash
