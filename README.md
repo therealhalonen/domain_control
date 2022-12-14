@@ -1,4 +1,4 @@
-# Domain Control - Testing
+# Domain Control - Beta Testing
 
 ### Configuring and controlling a domain, containing several machines with different operating systems, from Linux, with Salt.
 ---
