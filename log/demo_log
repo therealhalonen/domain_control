@@ -1,0 +1,4954 @@
+dev-server1:
+----------
+          ID: echo Hello DEV! $(hostname) DEV!
+    Function: cmd.run
+      Result: True
+     Comment: Command "echo Hello DEV! $(hostname) DEV!" run
+     Started: 08:04:23.892992
+    Duration: 16.914 ms
+     Changes:   
+              ----------
+              pid:
+                  10631
+              retcode:
+                  0
+              stderr:
+              stdout:
+                  Hello DEV! dev-server1 DEV!
+
+Summary for dev-server1
+------------
+Succeeded: 1 (changed=1)
+Failed:    0
+------------
+Total states run:     1
+Total run time:  16.914 ms
+dev-server2:
+----------
+          ID: echo Hello DEV! $(hostname) DEV!
+    Function: cmd.run
+      Result: True
+     Comment: Command "echo Hello DEV! $(hostname) DEV!" run
+     Started: 08:04:24.101209
+    Duration: 24.794 ms
+     Changes:   
+              ----------
+              pid:
+                  10627
+              retcode:
+                  0
+              stderr:
+              stdout:
+                  Hello DEV! dev-server2 DEV!
+
+Summary for dev-server2
+------------
+Succeeded: 1 (changed=1)
+Failed:    0
+------------
+Total states run:     1
+Total run time:  24.794 ms
+dev-ubuntu:
+----------
+          ID: echo Hello DEV! $(hostname) DEV!
+    Function: cmd.run
+      Result: True
+     Comment: Command "echo Hello DEV! $(hostname) DEV!" run
+     Started: 08:04:24.242859
+    Duration: 16.19 ms
+     Changes:   
+              ----------
+              pid:
+                  8601
+              retcode:
+                  0
+              stderr:
+              stdout:
+                  Hello DEV! dev-ubuntu DEV!
+
+Summary for dev-ubuntu
+------------
+Succeeded: 1 (changed=1)
+Failed:    0
+------------
+Total states run:     1
+Total run time:  16.190 ms
+dev-fedora-ws:
+----------
+          ID: echo Hello DEV! $(hostname) DEV!
+    Function: cmd.run
+      Result: True
+     Comment: Command "echo Hello DEV! $(hostname) DEV!" run
+     Started: 03:04:24.605978
+    Duration: 8.768 ms
+     Changes:   
+              ----------
+              pid:
+                  7162
+              retcode:
+                  0
+              stderr:
+              stdout:
+                  Hello DEV! dev-fedora-ws DEV!
+
+Summary for dev-fedora-ws
+------------
+Succeeded: 1 (changed=1)
+Failed:    0
+------------
+Total states run:     1
+Total run time:   8.768 ms
+webserver:
+----------
+          ID: echo Hello $(hostname)!
+    Function: cmd.run
+      Result: True
+     Comment: Command "echo Hello $(hostname)!" run
+     Started: 08:04:24.235660
+    Duration: 29.464 ms
+     Changes:   
+              ----------
+              pid:
+                  2591
+              retcode:
+                  0
+              stderr:
+              stdout:
+                  Hello webserver!
+----------
+          ID: update_pkg
+    Function: pkg.uptodate
+      Result: True
+     Comment: Upgrade ran successfully
+     Started: 08:04:25.953197
+    Duration: 30382.664 ms
+     Changes:   
+              ----------
+              bind9-dnsutils:
+                  ----------
+                  new:
+                      1:9.16.33-1~deb11u1
+                  old:
+                      1:9.16.27-1~deb11u1
+              bind9-host:
+                  ----------
+                  new:
+                      1:9.16.33-1~deb11u1
+                  old:
+                      1:9.16.27-1~deb11u1
+              bind9-libs:
+                  ----------
+                  new:
+                      1:9.16.33-1~deb11u1
+                  old:
+                      1:9.16.27-1~deb11u1
+              dbus:
+                  ----------
+                  new:
+                      1.12.24-0+deb11u1
+                  old:
+                      1.12.20-2
+              grub-common:
+                  ----------
+                  new:
+                      2.06-3~deb11u4
+                  old:
+                      2.06-3~deb11u1
+              grub-pc:
+                  ----------
+                  new:
+                      2.06-3~deb11u4
+                  old:
+                      2.06-3~deb11u1
+              grub-pc-bin:
+                  ----------
+                  new:
+                      2.06-3~deb11u4
+                  old:
+                      2.06-3~deb11u1
+              grub2-common:
+                  ----------
+                  new:
+                      2.06-3~deb11u4
+                  old:
+                      2.06-3~deb11u1
+              isc-dhcp-client:
+                  ----------
+                  new:
+                      4.4.1-2.3+deb11u1
+                  old:
+                      4.4.1-2.3
+              isc-dhcp-common:
+                  ----------
+                  new:
+                      4.4.1-2.3+deb11u1
+                  old:
+                      4.4.1-2.3
+              krb5-locales:
+                  ----------
+                  new:
+                      1.18.3-6+deb11u3
+                  old:
+                      1.18.3-6+deb11u2
+              libc-bin:
+                  ----------
+                  new:
+                      2.31-13+deb11u5
+                  old:
+                      2.31-13+deb11u4
+              libc-l10n:
+                  ----------
+                  new:
+                      2.31-13+deb11u5
+                  old:
+                      2.31-13+deb11u4
+              libc6:
+                  ----------
+                  new:
+                      2.31-13+deb11u5
+                  old:
+                      2.31-13+deb11u4
+              libdbus-1-3:
+                  ----------
+                  new:
+                      1.12.24-0+deb11u1
+                  old:
+                      1.12.20-2
+              libexpat1:
+                  ----------
+                  new:
+                      2.2.10-2+deb11u5
+                  old:
+                      2.2.10-2+deb11u3
+              libgssapi-krb5-2:
+                  ----------
+                  new:
+                      1.18.3-6+deb11u3
+                  old:
+                      1.18.3-6+deb11u2
+              libk5crypto3:
+                  ----------
+                  new:
+                      1.18.3-6+deb11u3
+                  old:
+                      1.18.3-6+deb11u2
+              libkrb5-3:
+                  ----------
+                  new:
+                      1.18.3-6+deb11u3
+                  old:
+                      1.18.3-6+deb11u2
+              libkrb5support0:
+                  ----------
+                  new:
+                      1.18.3-6+deb11u3
+                  old:
+                      1.18.3-6+deb11u2
+              libxml2:
+                  ----------
+                  new:
+                      2.9.10+dfsg-6.7+deb11u3
+                  old:
+                      2.9.10+dfsg-6.7+deb11u2
+              locales:
+                  ----------
+                  new:
+                      2.31-13+deb11u5
+                  old:
+                      2.31-13+deb11u4
+              tzdata:
+                  ----------
+                  new:
+                      2021a-1+deb11u8
+                  old:
+                      2021a-1+deb11u5
+----------
+          ID: sicki
+    Function: user.present
+      Result: True
+     Comment: New user sicki created
+     Started: 08:04:56.347233
+    Duration: 143.047 ms
+     Changes:   
+              ----------
+              fullname:
+              gid:
+                  1001
+              groups:
+                  - sicki
+              home:
+                  /home/sicki
+              homephone:
+              name:
+                  sicki
+              other:
+              passwd:
+                  x
+              password:
+                  XXX-REDACTED-XXX
+              roomnumber:
+              shell:
+                  /bin/bash
+              uid:
+                  1001
+              workphone:
+----------
+          ID: supreme
+    Function: user.present
+      Result: True
+     Comment: New user supreme created
+     Started: 08:04:56.490823
+    Duration: 133.362 ms
+     Changes:   
+              ----------
+              fullname:
+              gid:
+                  1002
+              groups:
+                  - sudo
+                  - supreme
+                  - www-data
+              home:
+              homephone:
+              name:
+                  supreme
+              other:
+              passwd:
+                  x
+              password:
+                  XXX-REDACTED-XXX
+              roomnumber:
+              shell:
+                  /bin/bash
+              uid:
+                  1002
+              workphone:
+----------
+          ID: avahi-daemon
+    Function: pkg.installed
+      Result: True
+     Comment: The following packages were installed/updated: avahi-daemon
+     Started: 08:04:58.789519
+    Duration: 11280.385 ms
+     Changes:   
+              ----------
+              avahi-daemon:
+                  ----------
+                  new:
+                      0.8-5+deb11u1
+                  old:
+              libavahi-common-data:
+                  ----------
+                  new:
+                      0.8-5+deb11u1
+                  old:
+              libavahi-common3:
+                  ----------
+                  new:
+                      0.8-5+deb11u1
+                  old:
+              libavahi-core7:
+                  ----------
+                  new:
+                      0.8-5+deb11u1
+                  old:
+              libdaemon0:
+                  ----------
+                  new:
+                      0.14-7.1
+                  old:
+              libnss-mdns:
+                  ----------
+                  new:
+                      0.14.1-2
+                  old:
+----------
+          ID: avahi-daemon.service
+    Function: service.running
+      Result: True
+     Comment: The service avahi-daemon.service is already running
+     Started: 08:05:10.115289
+    Duration: 78.274 ms
+     Changes:   
+----------
+          ID: install_ssh
+    Function: pkg.installed
+      Result: True
+     Comment: The following packages were installed/updated: ssh
+              The following packages were already installed: openssh-server
+     Started: 08:05:10.214327
+    Duration: 5459.522 ms
+     Changes:   
+              ----------
+              ssh:
+                  ----------
+                  new:
+                      1:8.4p1-5+deb11u1
+                  old:
+----------
+          ID: /etc/ssh/sshd_config
+    Function: file.managed
+      Result: True
+     Comment: File /etc/ssh/sshd_config updated
+     Started: 08:05:15.681032
+    Duration: 94.275 ms
+     Changes:   
+              ----------
+              diff:
+                  --- 
+                  +++ 
+                  @@ -1,127 +1,8 @@
+                  -#	$OpenBSD: sshd_config,v 1.103 2018/04/09 20:41:22 tj Exp $
+                  -
+                  -# This is the sshd server system-wide configuration file.  See
+                  -# sshd_config(5) for more information.
+                  -
+                  -# This sshd was compiled with PATH=/usr/bin:/bin:/usr/sbin:/sbin
+                  -
+                  -# The strategy used for options in the default sshd_config shipped with
+                  -# OpenSSH is to specify options with their default value where
+                  -# possible, but leave them commented.  Uncommented options override the
+                  -# default value.
+                  -
+                  +# These configs are made to replace Vagrant configs.
+                   Include /etc/ssh/sshd_config.d/*.conf
+                   
+                  -#Port 22
+                  -#AddressFamily any
+                  -#ListenAddress 0.0.0.0
+                  -#ListenAddress ::
+                  +# Replace port
+                  +Port 8888
+                   
+                  -#HostKey /etc/ssh/ssh_host_rsa_key
+                  -#HostKey /etc/ssh/ssh_host_ecdsa_key
+                  -#HostKey /etc/ssh/ssh_host_ed25519_key
+                  -
+                  -# Ciphers and keying
+                  -#RekeyLimit default none
+                  -
+                  -# Logging
+                  -#SyslogFacility AUTH
+                  -#LogLevel INFO
+                  -
+                  -# Authentication:
+                  -
+                  -#LoginGraceTime 2m
+                  -#PermitRootLogin prohibit-password
+                  -#StrictModes yes
+                  -#MaxAuthTries 6
+                  -#MaxSessions 10
+                  -
+                  -#PubkeyAuthentication yes
+                  -
+                  -# Expect .ssh/authorized_keys2 to be disregarded by default in future.
+                  -#AuthorizedKeysFile	.ssh/authorized_keys .ssh/authorized_keys2
+                  -
+                  -#AuthorizedPrincipalsFile none
+                  -
+                  -#AuthorizedKeysCommand none
+                  -#AuthorizedKeysCommandUser nobody
+                  -
+                  -# For this to work you will also need host keys in /etc/ssh/ssh_known_hosts
+                  -#HostbasedAuthentication no
+                  -# Change to yes if you don't trust ~/.ssh/known_hosts for
+                  -# HostbasedAuthentication
+                  -#IgnoreUserKnownHosts no
+                  -# Don't read the user's ~/.rhosts and ~/.shosts files
+                  -#IgnoreRhosts yes
+                  -
+                  -# To disable tunneled clear text passwords, change to no here!
+                  -PasswordAuthentication no
+                  -#PermitEmptyPasswords no
+                  -
+                  -# Change to yes to enable challenge-response passwords (beware issues with
+                  -# some PAM modules and threads)
+                  -ChallengeResponseAuthentication no
+                  -
+                  -# Kerberos options
+                  -#KerberosAuthentication no
+                  -#KerberosOrLocalPasswd yes
+                  -#KerberosTicketCleanup yes
+                  -#KerberosGetAFSToken no
+                  -
+                  -# GSSAPI options
+                  -#GSSAPIAuthentication no
+                  -#GSSAPICleanupCredentials yes
+                  -#GSSAPIStrictAcceptorCheck yes
+                  -#GSSAPIKeyExchange no
+                  -
+                  -# Set this to 'yes' to enable PAM authentication, account processing,
+                  -# and session processing. If this is enabled, PAM authentication will
+                  -# be allowed through the ChallengeResponseAuthentication and
+                  -# PasswordAuthentication.  Depending on your PAM configuration,
+                  -# PAM authentication via ChallengeResponseAuthentication may bypass
+                  -# the setting of "PermitRootLogin without-password".
+                  -# If you just want the PAM account and session checks to run without
+                  -# PAM authentication, then enable this but set PasswordAuthentication
+                  -# and ChallengeResponseAuthentication to 'no'.
+                  -UsePAM yes
+                  -
+                  -#AllowAgentForwarding yes
+                  -#AllowTcpForwarding yes
+                  -#GatewayPorts no
+                  -X11Forwarding yes
+                  -#X11DisplayOffset 10
+                  -#X11UseLocalhost yes
+                  -#PermitTTY yes
+                  -PrintMotd no
+                  -#PrintLastLog yes
+                  -#TCPKeepAlive yes
+                  -#PermitUserEnvironment no
+                  -#Compression delayed
+                  -#ClientAliveInterval 0
+                  -#ClientAliveCountMax 3
+                  -#UseDNS no
+                  -#PidFile /var/run/sshd.pid
+                  -#MaxStartups 10:30:100
+                  -#PermitTunnel no
+                  -#ChrootDirectory none
+                  -#VersionAddendum none
+                  -
+                  -# no default banner path
+                  -#Banner none
+                  -
+                  -# Allow client to pass locale environment variables
+                  -AcceptEnv LANG LC_*
+                  -
+                  -# override default of no subsystems
+                  -Subsystem	sftp	/usr/lib/openssh/sftp-server
+                  -
+                  -# Example of overriding settings on a per-user basis
+                  -#Match User anoncvs
+                  -#	X11Forwarding no
+                  -#	AllowTcpForwarding no
+                  -#	PermitTTY no
+                  -#	ForceCommand cvs server
+                  -ClientAliveInterval 120
+                  -
+                  -# debian vagrant box speedup
+                  -UseDNS no
+                  +# You may want to change this user later.
+                  +AllowUsers supreme
+----------
+          ID: ssh.service
+    Function: service.running
+      Result: True
+     Comment: Service reloaded
+     Started: 08:05:15.886164
+    Duration: 153.34 ms
+     Changes:   
+              ----------
+              ssh.service:
+                  True
+----------
+          ID: apache2
+    Function: pkg.installed
+      Result: True
+     Comment: The following packages were installed/updated: apache2
+     Started: 08:05:16.066666
+    Duration: 15904.013 ms
+     Changes:   
+              ----------
+              apache2:
+                  ----------
+                  new:
+                      2.4.54-1~deb11u1
+                  old:
+              apache2-bin:
+                  ----------
+                  new:
+                      2.4.54-1~deb11u1
+                  old:
+              apache2-data:
+                  ----------
+                  new:
+                      2.4.54-1~deb11u1
+                  old:
+              apache2-utils:
+                  ----------
+                  new:
+                      2.4.54-1~deb11u1
+                  old:
+              libapr1:
+                  ----------
+                  new:
+                      1.7.0-6+deb11u1
+                  old:
+              libaprutil1:
+                  ----------
+                  new:
+                      1.6.1-5
+                  old:
+              libaprutil1-dbd-sqlite3:
+                  ----------
+                  new:
+                      1.6.1-5
+                  old:
+              libaprutil1-ldap:
+                  ----------
+                  new:
+                      1.6.1-5
+                  old:
+              libcurl4:
+                  ----------
+                  new:
+                      7.74.0-1.3+deb11u3
+                  old:
+              liblua5.3-0:
+                  ----------
+                  new:
+                      5.3.3-1.1+b1
+                  old:
+              ssl-cert:
+                  ----------
+                  new:
+                      1.1.0+nmu1
+                  old:
+----------
+          ID: /var/www/html/index.html
+    Function: file.managed
+      Result: True
+     Comment: File /var/www/html/index.html updated
+     Started: 08:05:31.988299
+    Duration: 88.6 ms
+     Changes:   
+              ----------
+              diff:
+                  --- 
+                  +++ 
+                  @@ -1,368 +1 @@
+                  -
+                  -<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                  -<html xmlns="http://www.w3.org/1999/xhtml">
+                  -  <head>
+                  -    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                  -    <title>Apache2 Debian Default Page: It works</title>
+                  -    <style type="text/css" media="screen">
+                  -  * {
+                  -    margin: 0px 0px 0px 0px;
+                  -    padding: 0px 0px 0px 0px;
+                  -  }
+                  -
+                  -  body, html {
+                  -    padding: 3px 3px 3px 3px;
+                  -
+                  -    background-color: #D8DBE2;
+                  -
+                  -    font-family: Verdana, sans-serif;
+                  -    font-size: 11pt;
+                  -    text-align: center;
+                  -  }
+                  -
+                  -  div.main_page {
+                  -    position: relative;
+                  -    display: table;
+                  -
+                  -    width: 800px;
+                  -
+                  -    margin-bottom: 3px;
+                  -    margin-left: auto;
+                  -    margin-right: auto;
+                  -    padding: 0px 0px 0px 0px;
+                  -
+                  -    border-width: 2px;
+                  -    border-color: #212738;
+                  -    border-style: solid;
+                  -
+                  -    background-color: #FFFFFF;
+                  -
+                  -    text-align: center;
+                  -  }
+                  -
+                  -  div.page_header {
+                  -    height: 99px;
+                  -    width: 100%;
+                  -
+                  -    background-color: #F5F6F7;
+                  -  }
+                  -
+                  -  div.page_header span {
+                  -    margin: 15px 0px 0px 50px;
+                  -
+                  -    font-size: 180%;
+                  -    font-weight: bold;
+                  -  }
+                  -
+                  -  div.page_header img {
+                  -    margin: 3px 0px 0px 40px;
+                  -
+                  -    border: 0px 0px 0px;
+                  -  }
+                  -
+                  -  div.table_of_contents {
+                  -    clear: left;
+                  -
+                  -    min-width: 200px;
+                  -
+                  -    margin: 3px 3px 3px 3px;
+                  -
+                  -    background-color: #FFFFFF;
+                  -
+                  -    text-align: left;
+                  -  }
+                  -
+                  -  div.table_of_contents_item {
+                  -    clear: left;
+                  -
+                  -    width: 100%;
+                  -
+                  -    margin: 4px 0px 0px 0px;
+                  -
+                  -    background-color: #FFFFFF;
+                  -
+                  -    color: #000000;
+                  -    text-align: left;
+                  -  }
+                  -
+                  -  div.table_of_contents_item a {
+                  -    margin: 6px 0px 0px 6px;
+                  -  }
+                  -
+                  -  div.content_section {
+                  -    margin: 3px 3px 3px 3px;
+                  -
+                  -    background-color: #FFFFFF;
+                  -
+                  -    text-align: left;
+                  -  }
+                  -
+                  -  div.content_section_text {
+                  -    padding: 4px 8px 4px 8px;
+                  -
+                  -    color: #000000;
+                  -    font-size: 100%;
+                  -  }
+                  -
+                  -  div.content_section_text pre {
+                  -    margin: 8px 0px 8px 0px;
+                  -    padding: 8px 8px 8px 8px;
+                  -
+                  -    border-width: 1px;
+                  -    border-style: dotted;
+                  -    border-color: #000000;
+                  -
+                  -    background-color: #F5F6F7;
+                  -
+                  -    font-style: italic;
+                  -  }
+                  -
+                  -  div.content_section_text p {
+                  -    margin-bottom: 6px;
+                  -  }
+                  -
+                  -  div.content_section_text ul, div.content_section_text li {
+                  -    padding: 4px 8px 4px 16px;
+                  -  }
+                  -
+                  -  div.section_header {
+                  -    padding: 3px 6px 3px 6px;
+                  -
+                  -    background-color: #8E9CB2;
+                  -
+                  -    color: #FFFFFF;
+                  -    font-weight: bold;
+                  -    font-size: 112%;
+                  -    text-align: center;
+                  -  }
+                  -
+                  -  div.section_header_red {
+                  -    background-color: #CD214F;
+                  -  }
+                  -
+                  -  div.section_header_grey {
+                  -    background-color: #9F9386;
+                  -  }
+                  -
+                  -  .floating_element {
+                  -    position: relative;
+                  -    float: left;
+                  -  }
+                  -
+                  -  div.table_of_contents_item a,
+                  -  div.content_section_text a {
+                  -    text-decoration: none;
+                  -    font-weight: bold;
+                  -  }
+                  -
+                  -  div.table_of_contents_item a:link,
+                  -  div.table_of_contents_item a:visited,
+                  -  div.table_of_contents_item a:active {
+                  -    color: #000000;
+                  -  }
+                  -
+                  -  div.table_of_contents_item a:hover {
+                  -    background-color: #000000;
+                  -
+                  -    color: #FFFFFF;
+                  -  }
+                  -
+                  -  div.content_section_text a:link,
+                  -  div.content_section_text a:visited,
+                  -   div.content_section_text a:active {
+                  -    background-color: #DCDFE6;
+                  -
+                  -    color: #000000;
+                  -  }
+                  -
+                  -  div.content_section_text a:hover {
+                  -    background-color: #000000;
+                  -
+                  -    color: #DCDFE6;
+                  -  }
+                  -
+                  -  div.validator {
+                  -  }
+                  -    </style>
+                  -  </head>
+                  -  <body>
+                  -    <div class="main_page">
+                  -      <div class="page_header floating_element">
+                  -        <img src="/icons/openlogo-75.png" alt="Debian Logo" class="floating_element"/>
+                  -        <span class="floating_element">
+                  -          Apache2 Debian Default Page
+                  -        </span>
+                  -      </div>
+                  -<!--      <div class="table_of_contents floating_element">
+                  -        <div class="section_header section_header_grey">
+                  -          TABLE OF CONTENTS
+                  -        </div>
+                  -        <div class="table_of_contents_item floating_element">
+                  -          <a href="#about">About</a>
+                  -        </div>
+                  -        <div class="table_of_contents_item floating_element">
+                  -          <a href="#changes">Changes</a>
+                  -        </div>
+                  -        <div class="table_of_contents_item floating_element">
+                  -          <a href="#scope">Scope</a>
+                  -        </div>
+                  -        <div class="table_of_contents_item floating_element">
+                  -          <a href="#files">Config files</a>
+                  -        </div>
+                  -      </div>
+                  --->
+                  -      <div class="content_section floating_element">
+                  -
+                  -
+                  -        <div class="section_header section_header_red">
+                  -          <div id="about"></div>
+                  -          It works!
+                  -        </div>
+                  -        <div class="content_section_text">
+                  -          <p>
+                  -                This is the default welcome page used to test the correct 
+                  -                operation of the Apache2 server after installation on Debian systems.
+                  -                If you can read this page, it means that the Apache HTTP server installed at
+                  -                this site is working properly. You should <b>replace this file</b> (located at
+                  -                <tt>/var/www/html/index.html</tt>) before continuing to operate your HTTP server.
+                  -          </p>
+                  -
+                  -
+                  -          <p>
+                  -                If you are a normal user of this web site and don't know what this page is
+                  -                about, this probably means that the site is currently unavailable due to
+                  -                maintenance.
+                  -                If the problem persists, please contact the site's administrator.
+                  -          </p>
+                  -
+                  -        </div>
+                  -        <div class="section_header">
+                  -          <div id="changes"></div>
+                  -                Configuration Overview
+                  -        </div>
+                  -        <div class="content_section_text">
+                  -          <p>
+                  -                Debian's Apache2 default configuration is different from the
+                  -                upstream default configuration, and split into several files optimized for
+                  -                interaction with Debian tools. The configuration system is
+                  -                <b>fully documented in
+                  -                /usr/share/doc/apache2/README.Debian.gz</b>. Refer to this for the full
+                  -                documentation. Documentation for the web server itself can be
+                  -                found by accessing the <a href="/manual">manual</a> if the <tt>apache2-doc</tt>
+                  -                package was installed on this server.
+                  -
+                  -          </p>
+                  -          <p>
+                  -                The configuration layout for an Apache2 web server installation on Debian systems is as follows:
+                  -          </p>
+                  -          <pre>
+                  -/etc/apache2/
+                  -|-- apache2.conf
+                  -|       `--  ports.conf
+                  -|-- mods-enabled
+                  -|       |-- *.load
+                  -|       `-- *.conf
+                  -|-- conf-enabled
+                  -|       `-- *.conf
+                  -|-- sites-enabled
+                  -|       `-- *.conf
+                  -          </pre>
+                  -          <ul>
+                  -                        <li>
+                  -                           <tt>apache2.conf</tt> is the main configuration
+                  -                           file. It puts the pieces together by including all remaining configuration
+                  -                           files when starting up the web server.
+                  -                        </li>
+                  -
+                  -                        <li>
+                  -                           <tt>ports.conf</tt> is always included from the
+                  -                           main configuration file. It is used to determine the listening ports for
+                  -                           incoming connections, and this file can be customized anytime.
+                  -                        </li>
+                  -
+                  -                        <li>
+                  -                           Configuration files in the <tt>mods-enabled/</tt>,
+                  -                           <tt>conf-enabled/</tt> and <tt>sites-enabled/</tt> directories contain
+                  -                           particular configuration snippets which manage modules, global configuration
+                  -                           fragments, or virtual host configurations, respectively.
+                  -                        </li>
+                  -
+                  -                        <li>
+                  -                           They are activated by symlinking available
+                  -                           configuration files from their respective
+                  -                           *-available/ counterparts. These should be managed
+                  -                           by using our helpers
+                  -                           <tt>
+                  -                                a2enmod,
+                  -                                a2dismod,
+                  -                           </tt>
+                  -                           <tt>
+                  -                                a2ensite,
+                  -                                a2dissite,
+                  -                            </tt>
+                  -                                and
+                  -                           <tt>
+                  -                                a2enconf,
+                  -                                a2disconf
+                  -                           </tt>. See their respective man pages for detailed information.
+                  -                        </li>
+                  -
+                  -                        <li>
+                  -                           The binary is called apache2. Due to the use of
+                  -                           environment variables, in the default configuration, apache2 needs to be
+                  -                           started/stopped with <tt>/etc/init.d/apache2</tt> or <tt>apache2ctl</tt>.
+                  -                           <b>Calling <tt>/usr/bin/apache2</tt> directly will not work</b> with the
+                  -                           default configuration.
+                  -                        </li>
+                  -          </ul>
+                  -        </div>
+                  -
+                  -        <div class="section_header">
+                  -            <div id="docroot"></div>
+                  -                Document Roots
+                  -        </div>
+                  -
+                  -        <div class="content_section_text">
+                  -            <p>
+                  -                By default, Debian does not allow access through the web browser to
+                  -                <em>any</em> file apart of those located in <tt>/var/www</tt>,
+                  -                <a href="http://httpd.apache.org/docs/2.4/mod/mod_userdir.html" rel="nofollow">public_html</a>
+                  -                directories (when enabled) and <tt>/usr/share</tt> (for web
+                  -                applications). If your site is using a web document root
+                  -                located elsewhere (such as in <tt>/srv</tt>) you may need to whitelist your
+                  -                document root directory in <tt>/etc/apache2/apache2.conf</tt>.
+                  -            </p>
+                  -            <p>
+                  -                The default Debian document root is <tt>/var/www/html</tt>. You
+                  -                can make your own virtual hosts under /var/www. This is different
+                  -                to previous releases which provides better security out of the box.
+                  -            </p>
+                  -        </div>
+                  -
+                  -        <div class="section_header">
+                  -          <div id="bugs"></div>
+                  -                Reporting Problems
+                  -        </div>
+                  -        <div class="content_section_text">
+                  -          <p>
+                  -                Please use the <tt>reportbug</tt> tool to report bugs in the
+                  -                Apache2 package with Debian. However, check <a
+                  -                href="http://bugs.debian.org/cgi-bin/pkgreport.cgi?ordering=normal;archive=0;src=apache2;repeatmerged=0"
+                  -                rel="nofollow">existing bug reports</a> before reporting a new bug.
+                  -          </p>
+                  -          <p>
+                  -                Please report bugs specific to modules (such as PHP and others)
+                  -                to respective packages, not to the web server itself.
+                  -          </p>
+                  -        </div>
+                  -
+                  -
+                  -
+                  -
+                  -      </div>
+                  -    </div>
+                  -    <div class="validator">
+                  -    </div>
+                  -  </body>
+                  -</html>
+                  -
+                  +HelloWorld!
+----------
+          ID: /etc/apache2/mods-enabled/userdir.conf
+    Function: file.symlink
+      Result: True
+     Comment: Created new symlink /etc/apache2/mods-enabled/userdir.conf -> /etc/apache2/mods-available/userdir.conf
+     Started: 08:05:32.084000
+    Duration: 26.207 ms
+     Changes:   
+              ----------
+              new:
+                  /etc/apache2/mods-enabled/userdir.conf
+----------
+          ID: /etc/apache2/mods-enabled/userdir.load
+    Function: file.symlink
+      Result: True
+     Comment: Created new symlink /etc/apache2/mods-enabled/userdir.load -> /etc/apache2/mods-available/userdir.load
+     Started: 08:05:32.110490
+    Duration: 5.255 ms
+     Changes:   
+              ----------
+              new:
+                  /etc/apache2/mods-enabled/userdir.load
+----------
+          ID: apache2restart
+    Function: service.running
+        Name: apache2
+      Result: True
+     Comment: Service restarted
+     Started: 08:05:32.286073
+    Duration: 1477.161 ms
+     Changes:   
+              ----------
+              apache2:
+                  True
+
+Summary for webserver
+-------------
+Succeeded: 14 (changed=13)
+Failed:     0
+-------------
+Total states run:     14
+Total run time:   65.256 s
+fileserver:
+----------
+          ID: echo Hello $(hostname)!
+    Function: cmd.run
+      Result: True
+     Comment: Command "echo Hello $(hostname)!" run
+     Started: 08:04:24.241751
+    Duration: 18.807 ms
+     Changes:   
+              ----------
+              pid:
+                  2591
+              retcode:
+                  0
+              stderr:
+              stdout:
+                  Hello fileserver!
+----------
+          ID: update_pkg
+    Function: pkg.uptodate
+      Result: True
+     Comment: Upgrade ran successfully
+     Started: 08:04:26.045495
+    Duration: 26782.018 ms
+     Changes:   
+              ----------
+              bind9-dnsutils:
+                  ----------
+                  new:
+                      1:9.16.33-1~deb11u1
+                  old:
+                      1:9.16.27-1~deb11u1
+              bind9-host:
+                  ----------
+                  new:
+                      1:9.16.33-1~deb11u1
+                  old:
+                      1:9.16.27-1~deb11u1
+              bind9-libs:
+                  ----------
+                  new:
+                      1:9.16.33-1~deb11u1
+                  old:
+                      1:9.16.27-1~deb11u1
+              dbus:
+                  ----------
+                  new:
+                      1.12.24-0+deb11u1
+                  old:
+                      1.12.20-2
+              grub-common:
+                  ----------
+                  new:
+                      2.06-3~deb11u4
+                  old:
+                      2.06-3~deb11u1
+              grub-pc:
+                  ----------
+                  new:
+                      2.06-3~deb11u4
+                  old:
+                      2.06-3~deb11u1
+              grub-pc-bin:
+                  ----------
+                  new:
+                      2.06-3~deb11u4
+                  old:
+                      2.06-3~deb11u1
+              grub2-common:
+                  ----------
+                  new:
+                      2.06-3~deb11u4
+                  old:
+                      2.06-3~deb11u1
+              isc-dhcp-client:
+                  ----------
+                  new:
+                      4.4.1-2.3+deb11u1
+                  old:
+                      4.4.1-2.3
+              isc-dhcp-common:
+                  ----------
+                  new:
+                      4.4.1-2.3+deb11u1
+                  old:
+                      4.4.1-2.3
+              krb5-locales:
+                  ----------
+                  new:
+                      1.18.3-6+deb11u3
+                  old:
+                      1.18.3-6+deb11u2
+              libc-bin:
+                  ----------
+                  new:
+                      2.31-13+deb11u5
+                  old:
+                      2.31-13+deb11u4
+              libc-l10n:
+                  ----------
+                  new:
+                      2.31-13+deb11u5
+                  old:
+                      2.31-13+deb11u4
+              libc6:
+                  ----------
+                  new:
+                      2.31-13+deb11u5
+                  old:
+                      2.31-13+deb11u4
+              libdbus-1-3:
+                  ----------
+                  new:
+                      1.12.24-0+deb11u1
+                  old:
+                      1.12.20-2
+              libexpat1:
+                  ----------
+                  new:
+                      2.2.10-2+deb11u5
+                  old:
+                      2.2.10-2+deb11u3
+              libgssapi-krb5-2:
+                  ----------
+                  new:
+                      1.18.3-6+deb11u3
+                  old:
+                      1.18.3-6+deb11u2
+              libk5crypto3:
+                  ----------
+                  new:
+                      1.18.3-6+deb11u3
+                  old:
+                      1.18.3-6+deb11u2
+              libkrb5-3:
+                  ----------
+                  new:
+                      1.18.3-6+deb11u3
+                  old:
+                      1.18.3-6+deb11u2
+              libkrb5support0:
+                  ----------
+                  new:
+                      1.18.3-6+deb11u3
+                  old:
+                      1.18.3-6+deb11u2
+              libxml2:
+                  ----------
+                  new:
+                      2.9.10+dfsg-6.7+deb11u3
+                  old:
+                      2.9.10+dfsg-6.7+deb11u2
+              locales:
+                  ----------
+                  new:
+                      2.31-13+deb11u5
+                  old:
+                      2.31-13+deb11u4
+              tzdata:
+                  ----------
+                  new:
+                      2021a-1+deb11u8
+                  old:
+                      2021a-1+deb11u5
+----------
+          ID: sicki
+    Function: user.present
+      Result: True
+     Comment: New user sicki created
+     Started: 08:04:52.840578
+    Duration: 140.428 ms
+     Changes:   
+              ----------
+              fullname:
+              gid:
+                  1001
+              groups:
+                  - sicki
+              home:
+                  /home/sicki
+              homephone:
+              name:
+                  sicki
+              other:
+              passwd:
+                  x
+              password:
+                  XXX-REDACTED-XXX
+              roomnumber:
+              shell:
+                  /bin/bash
+              uid:
+                  1001
+              workphone:
+----------
+          ID: supreme
+    Function: user.present
+      Result: True
+     Comment: New user supreme created
+     Started: 08:04:52.981304
+    Duration: 207.679 ms
+     Changes:   
+              ----------
+              fullname:
+              gid:
+                  1002
+              groups:
+                  - sudo
+                  - supreme
+                  - www-data
+              home:
+              homephone:
+              name:
+                  supreme
+              other:
+              passwd:
+                  x
+              password:
+                  XXX-REDACTED-XXX
+              roomnumber:
+              shell:
+                  /bin/bash
+              uid:
+                  1002
+              workphone:
+----------
+          ID: avahi-daemon
+    Function: pkg.installed
+      Result: True
+     Comment: The following packages were installed/updated: avahi-daemon
+     Started: 08:04:55.008253
+    Duration: 10906.364 ms
+     Changes:   
+              ----------
+              avahi-daemon:
+                  ----------
+                  new:
+                      0.8-5+deb11u1
+                  old:
+              libavahi-common-data:
+                  ----------
+                  new:
+                      0.8-5+deb11u1
+                  old:
+              libavahi-common3:
+                  ----------
+                  new:
+                      0.8-5+deb11u1
+                  old:
+              libavahi-core7:
+                  ----------
+                  new:
+                      0.8-5+deb11u1
+                  old:
+              libdaemon0:
+                  ----------
+                  new:
+                      0.14-7.1
+                  old:
+              libnss-mdns:
+                  ----------
+                  new:
+                      0.14.1-2
+                  old:
+----------
+          ID: avahi-daemon.service
+    Function: service.running
+      Result: True
+     Comment: The service avahi-daemon.service is already running
+     Started: 08:05:05.961532
+    Duration: 80.899 ms
+     Changes:   
+----------
+          ID: install_ssh
+    Function: pkg.installed
+      Result: True
+     Comment: The following packages were installed/updated: ssh
+              The following packages were already installed: openssh-server
+     Started: 08:05:06.057419
+    Duration: 6305.915 ms
+     Changes:   
+              ----------
+              ssh:
+                  ----------
+                  new:
+                      1:8.4p1-5+deb11u1
+                  old:
+----------
+          ID: /etc/ssh/sshd_config
+    Function: file.managed
+      Result: True
+     Comment: File /etc/ssh/sshd_config updated
+     Started: 08:05:12.389108
+    Duration: 143.14 ms
+     Changes:   
+              ----------
+              diff:
+                  --- 
+                  +++ 
+                  @@ -1,127 +1,8 @@
+                  -#	$OpenBSD: sshd_config,v 1.103 2018/04/09 20:41:22 tj Exp $
+                  -
+                  -# This is the sshd server system-wide configuration file.  See
+                  -# sshd_config(5) for more information.
+                  -
+                  -# This sshd was compiled with PATH=/usr/bin:/bin:/usr/sbin:/sbin
+                  -
+                  -# The strategy used for options in the default sshd_config shipped with
+                  -# OpenSSH is to specify options with their default value where
+                  -# possible, but leave them commented.  Uncommented options override the
+                  -# default value.
+                  -
+                  +# These configs are made to replace Vagrant configs.
+                   Include /etc/ssh/sshd_config.d/*.conf
+                   
+                  -#Port 22
+                  -#AddressFamily any
+                  -#ListenAddress 0.0.0.0
+                  -#ListenAddress ::
+                  +# Replace port
+                  +Port 8888
+                   
+                  -#HostKey /etc/ssh/ssh_host_rsa_key
+                  -#HostKey /etc/ssh/ssh_host_ecdsa_key
+                  -#HostKey /etc/ssh/ssh_host_ed25519_key
+                  -
+                  -# Ciphers and keying
+                  -#RekeyLimit default none
+                  -
+                  -# Logging
+                  -#SyslogFacility AUTH
+                  -#LogLevel INFO
+                  -
+                  -# Authentication:
+                  -
+                  -#LoginGraceTime 2m
+                  -#PermitRootLogin prohibit-password
+                  -#StrictModes yes
+                  -#MaxAuthTries 6
+                  -#MaxSessions 10
+                  -
+                  -#PubkeyAuthentication yes
+                  -
+                  -# Expect .ssh/authorized_keys2 to be disregarded by default in future.
+                  -#AuthorizedKeysFile	.ssh/authorized_keys .ssh/authorized_keys2
+                  -
+                  -#AuthorizedPrincipalsFile none
+                  -
+                  -#AuthorizedKeysCommand none
+                  -#AuthorizedKeysCommandUser nobody
+                  -
+                  -# For this to work you will also need host keys in /etc/ssh/ssh_known_hosts
+                  -#HostbasedAuthentication no
+                  -# Change to yes if you don't trust ~/.ssh/known_hosts for
+                  -# HostbasedAuthentication
+                  -#IgnoreUserKnownHosts no
+                  -# Don't read the user's ~/.rhosts and ~/.shosts files
+                  -#IgnoreRhosts yes
+                  -
+                  -# To disable tunneled clear text passwords, change to no here!
+                  -PasswordAuthentication no
+                  -#PermitEmptyPasswords no
+                  -
+                  -# Change to yes to enable challenge-response passwords (beware issues with
+                  -# some PAM modules and threads)
+                  -ChallengeResponseAuthentication no
+                  -
+                  -# Kerberos options
+                  -#KerberosAuthentication no
+                  -#KerberosOrLocalPasswd yes
+                  -#KerberosTicketCleanup yes
+                  -#KerberosGetAFSToken no
+                  -
+                  -# GSSAPI options
+                  -#GSSAPIAuthentication no
+                  -#GSSAPICleanupCredentials yes
+                  -#GSSAPIStrictAcceptorCheck yes
+                  -#GSSAPIKeyExchange no
+                  -
+                  -# Set this to 'yes' to enable PAM authentication, account processing,
+                  -# and session processing. If this is enabled, PAM authentication will
+                  -# be allowed through the ChallengeResponseAuthentication and
+                  -# PasswordAuthentication.  Depending on your PAM configuration,
+                  -# PAM authentication via ChallengeResponseAuthentication may bypass
+                  -# the setting of "PermitRootLogin without-password".
+                  -# If you just want the PAM account and session checks to run without
+                  -# PAM authentication, then enable this but set PasswordAuthentication
+                  -# and ChallengeResponseAuthentication to 'no'.
+                  -UsePAM yes
+                  -
+                  -#AllowAgentForwarding yes
+                  -#AllowTcpForwarding yes
+                  -#GatewayPorts no
+                  -X11Forwarding yes
+                  -#X11DisplayOffset 10
+                  -#X11UseLocalhost yes
+                  -#PermitTTY yes
+                  -PrintMotd no
+                  -#PrintLastLog yes
+                  -#TCPKeepAlive yes
+                  -#PermitUserEnvironment no
+                  -#Compression delayed
+                  -#ClientAliveInterval 0
+                  -#ClientAliveCountMax 3
+                  -#UseDNS no
+                  -#PidFile /var/run/sshd.pid
+                  -#MaxStartups 10:30:100
+                  -#PermitTunnel no
+                  -#ChrootDirectory none
+                  -#VersionAddendum none
+                  -
+                  -# no default banner path
+                  -#Banner none
+                  -
+                  -# Allow client to pass locale environment variables
+                  -AcceptEnv LANG LC_*
+                  -
+                  -# override default of no subsystems
+                  -Subsystem	sftp	/usr/lib/openssh/sftp-server
+                  -
+                  -# Example of overriding settings on a per-user basis
+                  -#Match User anoncvs
+                  -#	X11Forwarding no
+                  -#	AllowTcpForwarding no
+                  -#	PermitTTY no
+                  -#	ForceCommand cvs server
+                  -ClientAliveInterval 120
+                  -
+                  -# debian vagrant box speedup
+                  -UseDNS no
+                  +# You may want to change this user later.
+                  +AllowUsers supreme
+----------
+          ID: ssh.service
+    Function: service.running
+      Result: True
+     Comment: Service reloaded
+     Started: 08:05:12.687452
+    Duration: 138.715 ms
+     Changes:   
+              ----------
+              ssh.service:
+                  True
+----------
+          ID: samba
+    Function: pkg.installed
+      Result: True
+     Comment: The following packages were installed/updated: samba
+     Started: 08:05:12.845326
+    Duration: 41382.806 ms
+     Changes:   
+              ----------
+              attr:
+                  ----------
+                  new:
+                      1:2.4.48-6
+                  old:
+              dirmngr:
+                  ----------
+                  new:
+                      2.2.27-2+deb11u2
+                  old:
+              gnupg:
+                  ----------
+                  new:
+                      2.2.27-2+deb11u2
+                  old:
+              gnupg-l10n:
+                  ----------
+                  new:
+                      2.2.27-2+deb11u2
+                  old:
+              gnupg-utils:
+                  ----------
+                  new:
+                      2.2.27-2+deb11u2
+                  old:
+              gpg:
+                  ----------
+                  new:
+                      2.2.27-2+deb11u2
+                  old:
+              gpg-agent:
+                  ----------
+                  new:
+                      2.2.27-2+deb11u2
+                  old:
+              gpg-wks-client:
+                  ----------
+                  new:
+                      2.2.27-2+deb11u2
+                  old:
+              gpg-wks-server:
+                  ----------
+                  new:
+                      2.2.27-2+deb11u2
+                  old:
+              gpgconf:
+                  ----------
+                  new:
+                      2.2.27-2+deb11u2
+                  old:
+              gpgsm:
+                  ----------
+                  new:
+                      2.2.27-2+deb11u2
+                  old:
+              ibverbs-providers:
+                  ----------
+                  new:
+                      33.2-1
+                  old:
+              libassuan0:
+                  ----------
+                  new:
+                      2.5.3-7.1
+                  old:
+              libavahi-client3:
+                  ----------
+                  new:
+                      0.8-5+deb11u1
+                  old:
+              libboost-iostreams1.74.0:
+                  ----------
+                  new:
+                      1.74.0-9
+                  old:
+              libboost-thread1.74.0:
+                  ----------
+                  new:
+                      1.74.0-9
+                  old:
+              libcephfs2:
+                  ----------
+                  new:
+                      14.2.21-1
+                  old:
+              libcups2:
+                  ----------
+                  new:
+                      2.3.3op2-3+deb11u2
+                  old:
+              libgfapi0:
+                  ----------
+                  new:
+                      9.2-1
+                  old:
+              libgfrpc0:
+                  ----------
+                  new:
+                      9.2-1
+                  old:
+              libgfxdr0:
+                  ----------
+                  new:
+                      9.2-1
+                  old:
+              libglusterfs0:
+                  ----------
+                  new:
+                      9.2-1
+                  old:
+              libgpgme11:
+                  ----------
+                  new:
+                      1.14.0-1+b2
+                  old:
+              libibverbs1:
+                  ----------
+                  new:
+                      33.2-1
+                  old:
+              libksba8:
+                  ----------
+                  new:
+                      1.5.0-3+deb11u1
+                  old:
+              libldb2:
+                  ----------
+                  new:
+                      2:2.2.3-2~deb11u2
+                  old:
+              libnl-3-200:
+                  ----------
+                  new:
+                      3.4.0-1+b1
+                  old:
+              libnl-route-3-200:
+                  ----------
+                  new:
+                      3.4.0-1+b1
+                  old:
+              libnpth0:
+                  ----------
+                  new:
+                      1.6-3
+                  old:
+              libnspr4:
+                  ----------
+                  new:
+                      2:4.29-1
+                  old:
+              libnss3:
+                  ----------
+                  new:
+                      2:3.61-1+deb11u2
+                  old:
+              libpython3.9:
+                  ----------
+                  new:
+                      3.9.2-1
+                  old:
+              librados2:
+                  ----------
+                  new:
+                      14.2.21-1
+                  old:
+              librdmacm1:
+                  ----------
+                  new:
+                      33.2-1
+                  old:
+              libtalloc2:
+                  ----------
+                  new:
+                      2.3.1-2+b1
+                  old:
+              libtdb1:
+                  ----------
+                  new:
+                      1.4.3-1+b1
+                  old:
+              libtevent0:
+                  ----------
+                  new:
+                      0.10.2-1
+                  old:
+              libwbclient0:
+                  ----------
+                  new:
+                      2:4.13.13+dfsg-1~deb11u5
+                  old:
+              pinentry-curses:
+                  ----------
+                  new:
+                      1.1.0-4
+                  old:
+              python3-cffi-backend:
+                  ----------
+                  new:
+                      1.14.5-1
+                  old:
+              python3-cryptography:
+                  ----------
+                  new:
+                      3.3.2-1
+                  old:
+              python3-dnspython:
+                  ----------
+                  new:
+                      2.0.0-1
+                  old:
+              python3-gpg:
+                  ----------
+                  new:
+                      1.14.0-1+b2
+                  old:
+              python3-ldb:
+                  ----------
+                  new:
+                      2:2.2.3-2~deb11u2
+                  old:
+              python3-markdown:
+                  ----------
+                  new:
+                      3.3.4-1
+                  old:
+              python3-pygments:
+                  ----------
+                  new:
+                      2.7.1+dfsg-2.1
+                  old:
+              python3-requests-toolbelt:
+                  ----------
+                  new:
+                      0.9.1-1
+                  old:
+              python3-samba:
+                  ----------
+                  new:
+                      2:4.13.13+dfsg-1~deb11u5
+                  old:
+              python3-talloc:
+                  ----------
+                  new:
+                      2.3.1-2+b1
+                  old:
+              python3-tdb:
+                  ----------
+                  new:
+                      1.4.3-1+b1
+                  old:
+              samba:
+                  ----------
+                  new:
+                      2:4.13.13+dfsg-1~deb11u5
+                  old:
+              samba-common:
+                  ----------
+                  new:
+                      2:4.13.13+dfsg-1~deb11u5
+                  old:
+              samba-common-bin:
+                  ----------
+                  new:
+                      2:4.13.13+dfsg-1~deb11u5
+                  old:
+              samba-dsdb-modules:
+                  ----------
+                  new:
+                      2:4.13.13+dfsg-1~deb11u5
+                  old:
+              samba-libs:
+                  ----------
+                  new:
+                      2:4.13.13+dfsg-1~deb11u5
+                  old:
+              samba-vfs-modules:
+                  ----------
+                  new:
+                      2:4.13.13+dfsg-1~deb11u5
+                  old:
+              tdb-tools:
+                  ----------
+                  new:
+                      1.4.3-1+b1
+                  old:
+----------
+          ID: sambauser
+    Function: user.present
+      Result: True
+     Comment: New user sambauser created
+     Started: 08:05:54.243005
+    Duration: 109.935 ms
+     Changes:   
+              ----------
+              fullname:
+              gid:
+                  1003
+              groups:
+                  - sambauser
+              home:
+                  /home/sambauser
+              homephone:
+              name:
+                  sambauser
+              other:
+              passwd:
+                  x
+              roomnumber:
+              shell:
+                  /usr/sbin/nologin
+              uid:
+                  1003
+              workphone:
+----------
+          ID: sambauser
+    Function: pdbedit.managed
+      Result: True
+     Comment: 
+     Started: 08:05:54.589488
+    Duration: 377.832 ms
+     Changes:   
+              ----------
+              sambauser:
+                  created
+----------
+          ID: /etc/samba/smb.conf
+    Function: file.managed
+      Result: True
+     Comment: File /etc/samba/smb.conf updated
+     Started: 08:05:54.971566
+    Duration: 57.608 ms
+     Changes:   
+              ----------
+              diff:
+                  --- 
+                  +++ 
+                  @@ -233,4 +233,9 @@
+                   # Please note that you also need to set appropriate Unix permissions
+                   # to the drivers directory for these users to have write rights in it
+                   ;   write list = root, @lpadmin
+                  -
+                  +[NAS]
+                  +    comment = NAS
+                  +    path = /home/sambauser/NAS
+                  +    browseable = yes
+                  +    read only = no
+                  +    quest ok = no
+----------
+          ID: smbd
+    Function: service.running
+      Result: True
+     Comment: The service smbd is already running
+     Started: 08:05:55.049851
+    Duration: 55.578 ms
+     Changes:   
+----------
+          ID: /home/sambauser/NAS
+    Function: file.directory
+      Result: True
+     Comment: Directory /home/sambauser/NAS updated
+     Started: 08:05:55.105853
+    Duration: 5.9 ms
+     Changes:   
+              ----------
+              /home/sambauser/NAS:
+                  New Dir
+
+Summary for fileserver
+-------------
+Succeeded: 15 (changed=13)
+Failed:     0
+-------------
+Total states run:     15
+Total run time:   86.714 s
+ubuntu-ws:
+----------
+          ID: echo Hello $(hostname)!
+    Function: cmd.run
+      Result: True
+     Comment: Command "echo Hello $(hostname)!" run
+     Started: 08:04:21.573974
+    Duration: 15.652 ms
+     Changes:   
+              ----------
+              pid:
+                  5006
+              retcode:
+                  0
+              stderr:
+              stdout:
+                  Hello ubuntu-ws!
+----------
+          ID: update_pkg
+    Function: pkg.uptodate
+      Result: True
+     Comment: Upgrade ran successfully
+     Started: 08:04:24.796980
+    Duration: 338186.035 ms
+     Changes:   
+              ----------
+              accountsservice:
+                  ----------
+                  new:
+                      22.07.5-2ubuntu1.3
+                  old:
+                      22.07.5-2ubuntu1
+              alsa-ucm-conf:
+                  ----------
+                  new:
+                      1.2.6.3-1ubuntu1.1
+                  old:
+                      1.2.6.3-1ubuntu1
+              apparmor:
+                  ----------
+                  new:
+                      3.0.4-2ubuntu2.1
+                  old:
+                      3.0.4-2ubuntu2
+              apt:
+                  ----------
+                  new:
+                      2.4.8
+                  old:
+                      2.4.5
+              apt-utils:
+                  ----------
+                  new:
+                      2.4.8
+                  old:
+                      2.4.5
+              base-files:
+                  ----------
+                  new:
+                      12ubuntu4.2
+                  old:
+                      12ubuntu4
+              bind9-dnsutils:
+                  ----------
+                  new:
+                      1:9.18.1-1ubuntu1.2
+                  old:
+                      1:9.18.1-1ubuntu1
+              bind9-host:
+                  ----------
+                  new:
+                      1:9.18.1-1ubuntu1.2
+                  old:
+                      1:9.18.1-1ubuntu1
+              bind9-libs:
+                  ----------
+                  new:
+                      1:9.18.1-1ubuntu1.2
+                  old:
+                      1:9.18.1-1ubuntu1
+              binutils:
+                  ----------
+                  new:
+                      2.38-4ubuntu2.1
+                  old:
+                      2.38-3ubuntu1
+              binutils-common:
+                  ----------
+                  new:
+                      2.38-4ubuntu2.1
+                  old:
+                      2.38-3ubuntu1
+              binutils-x86-64-linux-gnu:
+                  ----------
+                  new:
+                      2.38-4ubuntu2.1
+                  old:
+                      2.38-3ubuntu1
+              brltty:
+                  ----------
+                  new:
+                      6.4-4ubuntu3
+                  old:
+                      6.4-4ubuntu2
+              ca-certificates:
+                  ----------
+                  new:
+                      20211016ubuntu0.22.04.1
+                  old:
+                      20211016
+              cpp-11:
+                  ----------
+                  new:
+                      11.3.0-1ubuntu1~22.04
+                  old:
+                      11.2.0-19ubuntu1
+              cryptsetup:
+                  ----------
+                  new:
+                      2:2.4.3-1ubuntu1.1
+                  old:
+                      2:2.4.3-1ubuntu1
+              cryptsetup-bin:
+                  ----------
+                  new:
+                      2:2.4.3-1ubuntu1.1
+                  old:
+                      2:2.4.3-1ubuntu1
+              cryptsetup-initramfs:
+                  ----------
+                  new:
+                      2:2.4.3-1ubuntu1.1
+                  old:
+                      2:2.4.3-1ubuntu1
+              cups:
+                  ----------
+                  new:
+                      2.4.1op1-1ubuntu4.1
+                  old:
+                      2.4.1op1-1ubuntu4
+              cups-bsd:
+                  ----------
+                  new:
+                      2.4.1op1-1ubuntu4.1
+                  old:
+                      2.4.1op1-1ubuntu4
+              cups-client:
+                  ----------
+                  new:
+                      2.4.1op1-1ubuntu4.1
+                  old:
+                      2.4.1op1-1ubuntu4
+              cups-common:
+                  ----------
+                  new:
+                      2.4.1op1-1ubuntu4.1
+                  old:
+                      2.4.1op1-1ubuntu4
+              cups-core-drivers:
+                  ----------
+                  new:
+                      2.4.1op1-1ubuntu4.1
+                  old:
+                      2.4.1op1-1ubuntu4
+              cups-daemon:
+                  ----------
+                  new:
+                      2.4.1op1-1ubuntu4.1
+                  old:
+                      2.4.1op1-1ubuntu4
+              cups-ipp-utils:
+                  ----------
+                  new:
+                      2.4.1op1-1ubuntu4.1
+                  old:
+                      2.4.1op1-1ubuntu4
+              cups-ppdc:
+                  ----------
+                  new:
+                      2.4.1op1-1ubuntu4.1
+                  old:
+                      2.4.1op1-1ubuntu4
+              cups-server-common:
+                  ----------
+                  new:
+                      2.4.1op1-1ubuntu4.1
+                  old:
+                      2.4.1op1-1ubuntu4
+              curl:
+                  ----------
+                  new:
+                      7.81.0-1ubuntu1.6
+                  old:
+                      7.81.0-1ubuntu1.1
+              dbus:
+                  ----------
+                  new:
+                      1.12.20-2ubuntu4.1
+                  old:
+                      1.12.20-2ubuntu4
+              dbus-user-session:
+                  ----------
+                  new:
+                      1.12.20-2ubuntu4.1
+                  old:
+                      1.12.20-2ubuntu4
+              dirmngr:
+                  ----------
+                  new:
+                      2.2.27-3ubuntu2.1
+                  old:
+                      2.2.27-3ubuntu2
+              distro-info-data:
+                  ----------
+                  new:
+                      0.52ubuntu0.2
+                  old:
+                      0.52ubuntu0.1
+              dmidecode:
+                  ----------
+                  new:
+                      3.3-3ubuntu0.1
+                  old:
+                      3.3-3
+              dnsmasq-base:
+                  ----------
+                  new:
+                      2.86-1.1ubuntu0.1
+                  old:
+                      2.86-1.1
+              dpkg:
+                  ----------
+                  new:
+                      1.21.1ubuntu2.1
+                  old:
+                      1.21.1ubuntu2
+              e2fsprogs:
+                  ----------
+                  new:
+                      1.46.5-2ubuntu1.1
+                  old:
+                      1.46.5-2ubuntu1
+              evince:
+                  ----------
+                  new:
+                      42.3-0ubuntu2
+                  old:
+                      42.1-3
+              evince-common:
+                  ----------
+                  new:
+                      42.3-0ubuntu2
+                  old:
+                      42.1-3
+              evolution-data-server:
+                  ----------
+                  new:
+                      3.44.4-0ubuntu1
+                  old:
+                      3.44.0-2
+              evolution-data-server-common:
+                  ----------
+                  new:
+                      3.44.4-0ubuntu1
+                  old:
+                      3.44.0-2
+              firmware-sof-signed:
+                  ----------
+                  new:
+                      2.0-1ubuntu4
+                  old:
+                      2.0-1ubuntu3
+              fonts-opensymbol:
+                  ----------
+                  new:
+                      2:102.12+LibO7.3.7-0ubuntu0.22.04.1
+                  old:
+                      2:102.12+LibO7.3.2-0ubuntu2
+              fprintd:
+                  ----------
+                  new:
+                      1.94.2-1ubuntu0.22.04.1
+                  old:
+                      1.94.2-1
+              fwupd:
+                  ----------
+                  new:
+                      1.7.9-1~22.04.1
+                  old:
+                      1.7.5-3
+              gcc-11-base:
+                  ----------
+                  new:
+                      11.3.0-1ubuntu1~22.04
+                  old:
+                      11.2.0-19ubuntu1
+              gcc-12-base:
+                  ----------
+                  new:
+                      12.1.0-2ubuntu1~22.04
+                  old:
+                      12-20220319-1ubuntu1
+              gdb:
+                  ----------
+                  new:
+                      12.1-0ubuntu1~22.04
+                  old:
+                      12.0.90-0ubuntu1
+              ghostscript:
+                  ----------
+                  new:
+                      9.55.0~dfsg1-0ubuntu5.1
+                  old:
+                      9.55.0~dfsg1-0ubuntu5
+              ghostscript-x:
+                  ----------
+                  new:
+                      9.55.0~dfsg1-0ubuntu5.1
+                  old:
+                      9.55.0~dfsg1-0ubuntu5
+              gir1.2-accountsservice-1.0:
+                  ----------
+                  new:
+                      22.07.5-2ubuntu1.3
+                  old:
+                      22.07.5-2ubuntu1
+              gir1.2-gdkpixbuf-2.0:
+                  ----------
+                  new:
+                      2.42.8+dfsg-1ubuntu0.2
+                  old:
+                      2.42.8+dfsg-1
+              gir1.2-gnomedesktop-3.0:
+                  ----------
+                  new:
+                      42.5-0ubuntu1
+                  old:
+                      42.0-1ubuntu1
+              gir1.2-gstreamer-1.0:
+                  ----------
+                  new:
+                      1.20.3-0ubuntu1
+                  old:
+                      1.20.1-1
+              gir1.2-gtk-3.0:
+                  ----------
+                  new:
+                      3.24.33-1ubuntu2
+                  old:
+                      3.24.33-1ubuntu1
+              gir1.2-gtk-4.0:
+                  ----------
+                  new:
+                      4.6.6+ds-0ubuntu1
+                  old:
+                      4.6.2+ds-1ubuntu3
+              gir1.2-harfbuzz-0.0:
+                  ----------
+                  new:
+                      2.7.4-1ubuntu3.1
+                  old:
+                      2.7.4-1ubuntu3
+              gir1.2-mutter-10:
+                  ----------
+                  new:
+                      42.5-0ubuntu1
+                  old:
+                      42.0-3ubuntu2
+              gir1.2-nm-1.0:
+                  ----------
+                  new:
+                      1.36.6-0ubuntu2
+                  old:
+                      1.36.4-2ubuntu1
+              gir1.2-notify-0.7:
+                  ----------
+                  new:
+                      0.7.9-3ubuntu5.22.04.1
+                  old:
+                      0.7.9-3ubuntu5
+              git:
+                  ----------
+                  new:
+                      1:2.34.1-1ubuntu1.5
+                  old:
+                      1:2.34.1-1ubuntu1.2
+              git-man:
+                  ----------
+                  new:
+                      1:2.34.1-1ubuntu1.5
+                  old:
+                      1:2.34.1-1ubuntu1.2
+              gjs:
+                  ----------
+                  new:
+                      1.72.2-0ubuntu1
+                  old:
+                      1.72.0-1
+              gnome-control-center:
+                  ----------
+                  new:
+                      1:41.7-0ubuntu0.22.04.5
+                  old:
+                      1:41.4-1ubuntu13
+              gnome-control-center-data:
+                  ----------
+                  new:
+                      1:41.7-0ubuntu0.22.04.5
+                  old:
+                      1:41.4-1ubuntu13
+              gnome-control-center-faces:
+                  ----------
+                  new:
+                      1:41.7-0ubuntu0.22.04.5
+                  old:
+                      1:41.4-1ubuntu13
+              gnome-desktop3-data:
+                  ----------
+                  new:
+                      42.5-0ubuntu1
+                  old:
+                      42.0-1ubuntu1
+              gnome-keyring:
+                  ----------
+                  new:
+                      40.0-3ubuntu3
+                  old:
+                      40.0-3ubuntu2
+              gnome-keyring-pkcs11:
+                  ----------
+                  new:
+                      40.0-3ubuntu3
+                  old:
+                      40.0-3ubuntu2
+              gnome-remote-desktop:
+                  ----------
+                  new:
+                      42.4-0ubuntu1
+                  old:
+                      42.0-4ubuntu1
+              gnome-settings-daemon:
+                  ----------
+                  new:
+                      42.1-1ubuntu2.1
+                  old:
+                      42.1-1ubuntu2
+              gnome-settings-daemon-common:
+                  ----------
+                  new:
+                      42.1-1ubuntu2.1
+                  old:
+                      42.1-1ubuntu2
+              gnome-shell:
+                  ----------
+                  new:
+                      42.5-0ubuntu1
+                  old:
+                      42.0-2ubuntu1
+              gnome-shell-common:
+                  ----------
+                  new:
+                      42.5-0ubuntu1
+                  old:
+                      42.0-2ubuntu1
+              gnome-shell-extension-desktop-icons-ng:
+                  ----------
+                  new:
+                      43-2ubuntu1
+                  old:
+                      43-2
+              gnome-shell-extension-ubuntu-dock:
+                  ----------
+                  new:
+                      72~ubuntu5.22.04.1
+                  old:
+                      72~ubuntu5
+              gnupg:
+                  ----------
+                  new:
+                      2.2.27-3ubuntu2.1
+                  old:
+                      2.2.27-3ubuntu2
+              gnupg-l10n:
+                  ----------
+                  new:
+                      2.2.27-3ubuntu2.1
+                  old:
+                      2.2.27-3ubuntu2
+              gnupg-utils:
+                  ----------
+                  new:
+                      2.2.27-3ubuntu2.1
+                  old:
+                      2.2.27-3ubuntu2
+              gpg:
+                  ----------
+                  new:
+                      2.2.27-3ubuntu2.1
+                  old:
+                      2.2.27-3ubuntu2
+              gpg-agent:
+                  ----------
+                  new:
+                      2.2.27-3ubuntu2.1
+                  old:
+                      2.2.27-3ubuntu2
+              gpg-wks-client:
+                  ----------
+                  new:
+                      2.2.27-3ubuntu2.1
+                  old:
+                      2.2.27-3ubuntu2
+              gpg-wks-server:
+                  ----------
+                  new:
+                      2.2.27-3ubuntu2.1
+                  old:
+                      2.2.27-3ubuntu2
+              gpgconf:
+                  ----------
+                  new:
+                      2.2.27-3ubuntu2.1
+                  old:
+                      2.2.27-3ubuntu2
+              gpgsm:
+                  ----------
+                  new:
+                      2.2.27-3ubuntu2.1
+                  old:
+                      2.2.27-3ubuntu2
+              gpgv:
+                  ----------
+                  new:
+                      2.2.27-3ubuntu2.1
+                  old:
+                      2.2.27-3ubuntu2
+              gstreamer1.0-clutter-3.0:
+                  ----------
+                  new:
+                      3.0.27-2ubuntu1
+                  old:
+                      3.0.27-2build2
+              gstreamer1.0-gtk3:
+                  ----------
+                  new:
+                      1.20.3-0ubuntu1
+                  old:
+                      1.20.1-1ubuntu1
+              gstreamer1.0-pipewire:
+                  ----------
+                  new:
+                      0.3.48-1ubuntu2
+                  old:
+                      0.3.48-1ubuntu1
+              gstreamer1.0-plugins-good:
+                  ----------
+                  new:
+                      1.20.3-0ubuntu1
+                  old:
+                      1.20.1-1ubuntu1
+              gstreamer1.0-pulseaudio:
+                  ----------
+                  new:
+                      1.20.3-0ubuntu1
+                  old:
+                      1.20.1-1ubuntu1
+              gstreamer1.0-tools:
+                  ----------
+                  new:
+                      1.20.3-0ubuntu1
+                  old:
+                      1.20.1-1
+              gtk-update-icon-cache:
+                  ----------
+                  new:
+                      3.24.33-1ubuntu2
+                  old:
+                      3.24.33-1ubuntu1
+              gvfs:
+                  ----------
+                  new:
+                      1.48.2-0ubuntu1
+                  old:
+                      1.48.1-4
+              gvfs-backends:
+                  ----------
+                  new:
+                      1.48.2-0ubuntu1
+                  old:
+                      1.48.1-4
+              gvfs-common:
+                  ----------
+                  new:
+                      1.48.2-0ubuntu1
+                  old:
+                      1.48.1-4
+              gvfs-daemons:
+                  ----------
+                  new:
+                      1.48.2-0ubuntu1
+                  old:
+                      1.48.1-4
+              gvfs-fuse:
+                  ----------
+                  new:
+                      1.48.2-0ubuntu1
+                  old:
+                      1.48.1-4
+              gvfs-libs:
+                  ----------
+                  new:
+                      1.48.2-0ubuntu1
+                  old:
+                      1.48.1-4
+              gzip:
+                  ----------
+                  new:
+                      1.10-4ubuntu4.1
+                  old:
+                      1.10-4ubuntu4
+              intel-microcode:
+                  ----------
+                  new:
+                      3.20220809.0ubuntu0.22.04.1
+                  old:
+                      3.20210608.2ubuntu1
+              isc-dhcp-client:
+                  ----------
+                  new:
+                      4.4.1-2.3ubuntu2.3
+                  old:
+                      4.4.1-2.3ubuntu2
+              isc-dhcp-common:
+                  ----------
+                  new:
+                      4.4.1-2.3ubuntu2.3
+                  old:
+                      4.4.1-2.3ubuntu2
+              kpartx:
+                  ----------
+                  new:
+                      0.8.8-1ubuntu1.22.04.1
+                  old:
+                      0.8.8-1ubuntu1
+              ldap-utils:
+                  ----------
+                  new:
+                      2.5.13+dfsg-0ubuntu0.22.04.1
+                  old:
+                      2.5.11+dfsg-1~exp1ubuntu3
+              libaccountsservice0:
+                  ----------
+                  new:
+                      22.07.5-2ubuntu1.3
+                  old:
+                      22.07.5-2ubuntu1
+              libapparmor1:
+                  ----------
+                  new:
+                      3.0.4-2ubuntu2.1
+                  old:
+                      3.0.4-2ubuntu2
+              libapt-pkg6.0:
+                  ----------
+                  new:
+                      2.4.8
+                  old:
+                      2.4.5
+              libbinutils:
+                  ----------
+                  new:
+                      2.38-4ubuntu2.1
+                  old:
+                      2.38-3ubuntu1
+              libbpf0:
+                  ----------
+                  new:
+                      1:0.5.0-1ubuntu22.04.1
+                  old:
+                      1:0.5.0-1
+              libbrlapi0.8:
+                  ----------
+                  new:
+                      6.4-4ubuntu3
+                  old:
+                      6.4-4ubuntu2
+              libc-bin:
+                  ----------
+                  new:
+                      2.35-0ubuntu3.1
+                  old:
+                      2.35-0ubuntu3
+              libc6:
+                  ----------
+                  new:
+                      2.35-0ubuntu3.1
+                  old:
+                      2.35-0ubuntu3
+              libc6-dbg:
+                  ----------
+                  new:
+                      2.35-0ubuntu3.1
+                  old:
+                      2.35-0ubuntu3
+              libcamel-1.2-63:
+                  ----------
+                  new:
+                      3.44.4-0ubuntu1
+                  old:
+                      3.44.0-2
+              libclutter-gst-3.0-0:
+                  ----------
+                  new:
+                      3.0.27-2ubuntu1
+                  old:
+                      3.0.27-2build2
+              libcom-err2:
+                  ----------
+                  new:
+                      1.46.5-2ubuntu1.1
+                  old:
+                      1.46.5-2ubuntu1
+              libcryptsetup12:
+                  ----------
+                  new:
+                      2:2.4.3-1ubuntu1.1
+                  old:
+                      2:2.4.3-1ubuntu1
+              libctf-nobfd0:
+                  ----------
+                  new:
+                      2.38-4ubuntu2.1
+                  old:
+                      2.38-3ubuntu1
+              libctf0:
+                  ----------
+                  new:
+                      2.38-4ubuntu2.1
+                  old:
+                      2.38-3ubuntu1
+              libcups2:
+                  ----------
+                  new:
+                      2.4.1op1-1ubuntu4.1
+                  old:
+                      2.4.1op1-1ubuntu4
+              libcupsimage2:
+                  ----------
+                  new:
+                      2.4.1op1-1ubuntu4.1
+                  old:
+                      2.4.1op1-1ubuntu4
+              libcurl3-gnutls:
+                  ----------
+                  new:
+                      7.81.0-1ubuntu1.6
+                  old:
+                      7.81.0-1ubuntu1.1
+              libcurl4:
+                  ----------
+                  new:
+                      7.81.0-1ubuntu1.6
+                  old:
+                      7.81.0-1ubuntu1.1
+              libdbus-1-3:
+                  ----------
+                  new:
+                      1.12.20-2ubuntu4.1
+                  old:
+                      1.12.20-2ubuntu4
+              libebackend-1.2-10:
+                  ----------
+                  new:
+                      3.44.4-0ubuntu1
+                  old:
+                      3.44.0-2
+              libebook-1.2-20:
+                  ----------
+                  new:
+                      3.44.4-0ubuntu1
+                  old:
+                      3.44.0-2
+              libebook-contacts-1.2-3:
+                  ----------
+                  new:
+                      3.44.4-0ubuntu1
+                  old:
+                      3.44.0-2
+              libecal-2.0-1:
+                  ----------
+                  new:
+                      3.44.4-0ubuntu1
+                  old:
+                      3.44.0-2
+              libedata-book-1.2-26:
+                  ----------
+                  new:
+                      3.44.4-0ubuntu1
+                  old:
+                      3.44.0-2
+              libedata-cal-2.0-1:
+                  ----------
+                  new:
+                      3.44.4-0ubuntu1
+                  old:
+                      3.44.0-2
+              libedataserver-1.2-26:
+                  ----------
+                  new:
+                      3.44.4-0ubuntu1
+                  old:
+                      3.44.0-2
+              libedataserverui-1.2-3:
+                  ----------
+                  new:
+                      3.44.4-0ubuntu1
+                  old:
+                      3.44.0-2
+              libegl-mesa0:
+                  ----------
+                  new:
+                      22.0.5-0ubuntu0.1
+                  old:
+                      22.0.1-1ubuntu2
+              libevdocument3-4:
+                  ----------
+                  new:
+                      42.3-0ubuntu2
+                  old:
+                      42.1-3
+              libevview3-3:
+                  ----------
+                  new:
+                      42.3-0ubuntu2
+                  old:
+                      42.1-3
+              libexempi8:
+                  ----------
+                  new:
+                      2.5.2-1ubuntu0.22.04.1
+                  old:
+                      2.5.2-1build1
+              libexpat1:
+                  ----------
+                  new:
+                      2.4.7-1ubuntu0.2
+                  old:
+                      2.4.7-1
+              libext2fs2:
+                  ----------
+                  new:
+                      1.46.5-2ubuntu1.1
+                  old:
+                      1.46.5-2ubuntu1
+              libflac8:
+                  ----------
+                  new:
+                      1.3.3-2ubuntu0.1
+                  old:
+                      1.3.3-2build2
+              libfprint-2-2:
+                  ----------
+                  new:
+                      1:1.94.3+tod1-0ubuntu2~22.04.03
+                  old:
+                      1:1.94.3+tod1-0ubuntu1
+              libfreerdp-client2-2:
+                  ----------
+                  new:
+                      2.6.1+dfsg1-3ubuntu2.3
+                  old:
+                      2.6.1+dfsg1-3ubuntu1
+              libfreerdp-server2-2:
+                  ----------
+                  new:
+                      2.6.1+dfsg1-3ubuntu2.3
+                  old:
+                      2.6.1+dfsg1-3ubuntu1
+              libfreerdp2-2:
+                  ----------
+                  new:
+                      2.6.1+dfsg1-3ubuntu2.3
+                  old:
+                      2.6.1+dfsg1-3ubuntu1
+              libfreetype6:
+                  ----------
+                  new:
+                      2.11.1+dfsg-1ubuntu0.1
+                  old:
+                      2.11.1+dfsg-1build1
+              libfwupd2:
+                  ----------
+                  new:
+                      1.7.9-1~22.04.1
+                  old:
+                      1.7.5-3
+              libfwupdplugin5:
+                  ----------
+                  new:
+                      1.7.9-1~22.04.1
+                  old:
+                      1.7.5-3
+              libgbm1:
+                  ----------
+                  new:
+                      22.0.5-0ubuntu0.1
+                  old:
+                      22.0.1-1ubuntu2
+              libgcc-s1:
+                  ----------
+                  new:
+                      12.1.0-2ubuntu1~22.04
+                  old:
+                      12-20220319-1ubuntu1
+              libgdk-pixbuf-2.0-0:
+                  ----------
+                  new:
+                      2.42.8+dfsg-1ubuntu0.2
+                  old:
+                      2.42.8+dfsg-1
+              libgdk-pixbuf2.0-bin:
+                  ----------
+                  new:
+                      2.42.8+dfsg-1ubuntu0.2
+                  old:
+                      2.42.8+dfsg-1
+              libgdk-pixbuf2.0-common:
+                  ----------
+                  new:
+                      2.42.8+dfsg-1ubuntu0.2
+                  old:
+                      2.42.8+dfsg-1
+              libgjs0g:
+                  ----------
+                  new:
+                      1.72.2-0ubuntu1
+                  old:
+                      1.72.0-1
+              libgl1-mesa-dri:
+                  ----------
+                  new:
+                      22.0.5-0ubuntu0.1
+                  old:
+                      22.0.1-1ubuntu2
+              libglapi-mesa:
+                  ----------
+                  new:
+                      22.0.5-0ubuntu0.1
+                  old:
+                      22.0.1-1ubuntu2
+              libglib2.0-0:
+                  ----------
+                  new:
+                      2.72.4-0ubuntu1
+                  old:
+                      2.72.1-1
+              libglib2.0-bin:
+                  ----------
+                  new:
+                      2.72.4-0ubuntu1
+                  old:
+                      2.72.1-1
+              libglib2.0-data:
+                  ----------
+                  new:
+                      2.72.4-0ubuntu1
+                  old:
+                      2.72.1-1
+              libglx-mesa0:
+                  ----------
+                  new:
+                      22.0.5-0ubuntu0.1
+                  old:
+                      22.0.1-1ubuntu2
+              libgnome-bg-4-1:
+                  ----------
+                  new:
+                      42.5-0ubuntu1
+                  old:
+                      42.0-1ubuntu1
+              libgnome-desktop-3-19:
+                  ----------
+                  new:
+                      42.5-0ubuntu1
+                  old:
+                      42.0-1ubuntu1
+              libgnome-desktop-4-1:
+                  ----------
+                  new:
+                      42.5-0ubuntu1
+                  old:
+                      42.0-1ubuntu1
+              libgnutls30:
+                  ----------
+                  new:
+                      3.7.3-4ubuntu1.1
+                  old:
+                      3.7.3-4ubuntu1
+              libgomp1:
+                  ----------
+                  new:
+                      12.1.0-2ubuntu1~22.04
+                  old:
+                      12-20220319-1ubuntu1
+              libgs9:
+                  ----------
+                  new:
+                      9.55.0~dfsg1-0ubuntu5.1
+                  old:
+                      9.55.0~dfsg1-0ubuntu5
+              libgs9-common:
+                  ----------
+                  new:
+                      9.55.0~dfsg1-0ubuntu5.1
+                  old:
+                      9.55.0~dfsg1-0ubuntu5
+              libgstreamer-plugins-good1.0-0:
+                  ----------
+                  new:
+                      1.20.3-0ubuntu1
+                  old:
+                      1.20.1-1ubuntu1
+              libgstreamer1.0-0:
+                  ----------
+                  new:
+                      1.20.3-0ubuntu1
+                  old:
+                      1.20.1-1
+              libgtk-3-0:
+                  ----------
+                  new:
+                      3.24.33-1ubuntu2
+                  old:
+                      3.24.33-1ubuntu1
+              libgtk-3-bin:
+                  ----------
+                  new:
+                      3.24.33-1ubuntu2
+                  old:
+                      3.24.33-1ubuntu1
+              libgtk-3-common:
+                  ----------
+                  new:
+                      3.24.33-1ubuntu2
+                  old:
+                      3.24.33-1ubuntu1
+              libgtk-4-1:
+                  ----------
+                  new:
+                      4.6.6+ds-0ubuntu1
+                  old:
+                      4.6.2+ds-1ubuntu3
+              libgtk-4-bin:
+                  ----------
+                  new:
+                      4.6.6+ds-0ubuntu1
+                  old:
+                      4.6.2+ds-1ubuntu3
+              libgtk-4-common:
+                  ----------
+                  new:
+                      4.6.6+ds-0ubuntu1
+                  old:
+                      4.6.2+ds-1ubuntu3
+              libharfbuzz-icu0:
+                  ----------
+                  new:
+                      2.7.4-1ubuntu3.1
+                  old:
+                      2.7.4-1ubuntu3
+              libharfbuzz0b:
+                  ----------
+                  new:
+                      2.7.4-1ubuntu3.1
+                  old:
+                      2.7.4-1ubuntu3
+              libhttp-daemon-perl:
+                  ----------
+                  new:
+                      6.13-1ubuntu0.1
+                  old:
+                      6.13-1
+              libipa-hbac0:
+                  ----------
+                  new:
+                      2.6.3-1ubuntu3.2
+                  old:
+                      2.6.3-1ubuntu3
+              libjbig0:
+                  ----------
+                  new:
+                      2.1-3.1ubuntu0.22.04.1
+                  old:
+                      2.1-3.1build3
+              libjson-c5:
+                  ----------
+                  new:
+                      0.15-3~ubuntu1.22.04.1
+                  old:
+                      0.15-2build4
+              libksba8:
+                  ----------
+                  new:
+                      1.6.0-2ubuntu0.1
+                  old:
+                      1.6.0-2build1
+              libldap-2.5-0:
+                  ----------
+                  new:
+                      2.5.13+dfsg-0ubuntu0.22.04.1
+                  old:
+                      2.5.11+dfsg-1~exp1ubuntu3
+              libldap-common:
+                  ----------
+                  new:
+                      2.5.13+dfsg-0ubuntu0.22.04.1
+                  old:
+                      2.5.11+dfsg-1~exp1ubuntu3
+              libldb2:
+                  ----------
+                  new:
+                      2:2.4.4-0ubuntu0.1
+                  old:
+                      2:2.4.2-0ubuntu1
+              libllvm13:
+                  ----------
+                  new:
+                      1:13.0.1-2ubuntu2.1
+                  old:
+                      1:13.0.1-2ubuntu2
+              liblouis-data:
+                  ----------
+                  new:
+                      3.20.0-2ubuntu0.1
+                  old:
+                      3.20.0-2
+              liblouis20:
+                  ----------
+                  new:
+                      3.20.0-2ubuntu0.1
+                  old:
+                      3.20.0-2
+              libmozjs-91-0:
+                  ----------
+                  new:
+                      91.10.0-0ubuntu1
+                  old:
+                      91.7.0-2
+              libmutter-10-0:
+                  ----------
+                  new:
+                      42.5-0ubuntu1
+                  old:
+                      42.0-3ubuntu2
+              libnautilus-extension1a:
+                  ----------
+                  new:
+                      1:42.2-0ubuntu1
+                  old:
+                      1:42.0-1ubuntu2
+              libnetplan0:
+                  ----------
+                  new:
+                      0.105-0ubuntu2~22.04.1
+                  old:
+                      0.104-0ubuntu2
+              libnfsidmap1:
+                  ----------
+                  new:
+                      1:2.6.1-1ubuntu1.2
+                  old:
+                      1:2.6.1-1ubuntu1
+              libnftables1:
+                  ----------
+                  new:
+                      1.0.2-1ubuntu3
+                  old:
+                      1.0.2-1ubuntu2
+              libnm0:
+                  ----------
+                  new:
+                      1.36.6-0ubuntu2
+                  old:
+                      1.36.4-2ubuntu1
+              libnotify-bin:
+                  ----------
+                  new:
+                      0.7.9-3ubuntu5.22.04.1
+                  old:
+                      0.7.9-3ubuntu5
+              libnotify4:
+                  ----------
+                  new:
+                      0.7.9-3ubuntu5.22.04.1
+                  old:
+                      0.7.9-3ubuntu5
+              libnss-sss:
+                  ----------
+                  new:
+                      2.6.3-1ubuntu3.2
+                  old:
+                      2.6.3-1ubuntu3
+              libnss-systemd:
+                  ----------
+                  new:
+                      249.11-0ubuntu3.6
+                  old:
+                      249.11-0ubuntu3.1
+              libnss3:
+                  ----------
+                  new:
+                      2:3.68.2-0ubuntu1.1
+                  old:
+                      2:3.68.2-0ubuntu1
+              libntfs-3g89:
+                  ----------
+                  new:
+                      1:2021.8.22-3ubuntu1.2
+                  old:
+                      1:2021.8.22-3ubuntu1
+              libpam-fprintd:
+                  ----------
+                  new:
+                      1.94.2-1ubuntu0.22.04.1
+                  old:
+                      1.94.2-1
+              libpam-gnome-keyring:
+                  ----------
+                  new:
+                      40.0-3ubuntu3
+                  old:
+                      40.0-3ubuntu2
+              libpam-sss:
+                  ----------
+                  new:
+                      2.6.3-1ubuntu3.2
+                  old:
+                      2.6.3-1ubuntu3
+              libpam-systemd:
+                  ----------
+                  new:
+                      249.11-0ubuntu3.6
+                  old:
+                      249.11-0ubuntu3.1
+              libpcre2-32-0:
+                  ----------
+                  new:
+                      10.39-3ubuntu0.1
+                  old:
+                      10.39-3build1
+              libpcre2-8-0:
+                  ----------
+                  new:
+                      10.39-3ubuntu0.1
+                  old:
+                      10.39-3build1
+              libpcre3:
+                  ----------
+                  new:
+                      2:8.39-13ubuntu0.22.04.1
+                  old:
+                      2:8.39-13build5
+              libperl5.34:
+                  ----------
+                  new:
+                      5.34.0-3ubuntu1.1
+                  old:
+                      5.34.0-3ubuntu1
+              libpipewire-0.3-0:
+                  ----------
+                  new:
+                      0.3.48-1ubuntu2
+                  old:
+                      0.3.48-1ubuntu1
+              libpipewire-0.3-common:
+                  ----------
+                  new:
+                      0.3.48-1ubuntu2
+                  old:
+                      0.3.48-1ubuntu1
+              libpipewire-0.3-modules:
+                  ----------
+                  new:
+                      0.3.48-1ubuntu2
+                  old:
+                      0.3.48-1ubuntu1
+              libpixman-1-0:
+                  ----------
+                  new:
+                      0.40.0-1ubuntu0.22.04.1
+                  old:
+                      0.40.0-1build4
+              libpkcs11-helper1:
+                  ----------
+                  new:
+                      1.28-1ubuntu0.22.04.1
+                  old:
+                      1.28-1
+              libpoppler-cpp0v5:
+                  ----------
+                  new:
+                      22.02.0-2ubuntu0.1
+                  old:
+                      22.02.0-2
+              libpoppler-glib8:
+                  ----------
+                  new:
+                      22.02.0-2ubuntu0.1
+                  old:
+                      22.02.0-2
+              libpoppler118:
+                  ----------
+                  new:
+                      22.02.0-2ubuntu0.1
+                  old:
+                      22.02.0-2
+              libpulse-mainloop-glib0:
+                  ----------
+                  new:
+                      1:15.99.1+dfsg1-1ubuntu2
+                  old:
+                      1:15.99.1+dfsg1-1ubuntu1
+              libpulse0:
+                  ----------
+                  new:
+                      1:15.99.1+dfsg1-1ubuntu2
+                  old:
+                      1:15.99.1+dfsg1-1ubuntu1
+              libpulsedsp:
+                  ----------
+                  new:
+                      1:15.99.1+dfsg1-1ubuntu2
+                  old:
+                      1:15.99.1+dfsg1-1ubuntu1
+              libpython3-stdlib:
+                  ----------
+                  new:
+                      3.10.6-1~22.04
+                  old:
+                      3.10.4-0ubuntu2
+              libpython3.10:
+                  ----------
+                  new:
+                      3.10.6-1~22.04.2
+                  old:
+                      3.10.4-3
+              libpython3.10-minimal:
+                  ----------
+                  new:
+                      3.10.6-1~22.04.2
+                  old:
+                      3.10.4-3
+              libpython3.10-stdlib:
+                  ----------
+                  new:
+                      3.10.6-1~22.04.2
+                  old:
+                      3.10.4-3
+              libreoffice-style-breeze:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+                      1:7.3.2-0ubuntu2
+              libreoffice-style-colibre:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+                      1:7.3.2-0ubuntu2
+              libsmbclient:
+                  ----------
+                  new:
+                      2:4.15.9+dfsg-0ubuntu0.3
+                  old:
+                      2:4.15.5~dfsg-0ubuntu5
+              libsnmp-base:
+                  ----------
+                  new:
+                      5.9.1+dfsg-1ubuntu2.2
+                  old:
+                      5.9.1+dfsg-1ubuntu2.1
+              libsnmp40:
+                  ----------
+                  new:
+                      5.9.1+dfsg-1ubuntu2.2
+                  old:
+                      5.9.1+dfsg-1ubuntu2.1
+              libspa-0.2-modules:
+                  ----------
+                  new:
+                      0.3.48-1ubuntu2
+                  old:
+                      0.3.48-1ubuntu1
+              libspeechd2:
+                  ----------
+                  new:
+                      0.11.1-1ubuntu2
+                  old:
+                      0.11.1-1
+              libsqlite3-0:
+                  ----------
+                  new:
+                      3.37.2-2ubuntu0.1
+                  old:
+                      3.37.2-2
+              libss2:
+                  ----------
+                  new:
+                      1.46.5-2ubuntu1.1
+                  old:
+                      1.46.5-2ubuntu1
+              libssl3:
+                  ----------
+                  new:
+                      3.0.2-0ubuntu1.7
+                  old:
+                      3.0.2-0ubuntu1.1
+              libsss-certmap0:
+                  ----------
+                  new:
+                      2.6.3-1ubuntu3.2
+                  old:
+                      2.6.3-1ubuntu3
+              libsss-idmap0:
+                  ----------
+                  new:
+                      2.6.3-1ubuntu3.2
+                  old:
+                      2.6.3-1ubuntu3
+              libsss-nss-idmap0:
+                  ----------
+                  new:
+                      2.6.3-1ubuntu3.2
+                  old:
+                      2.6.3-1ubuntu3
+              libstdc++6:
+                  ----------
+                  new:
+                      12.1.0-2ubuntu1~22.04
+                  old:
+                      12-20220319-1ubuntu1
+              libsystemd0:
+                  ----------
+                  new:
+                      249.11-0ubuntu3.6
+                  old:
+                      249.11-0ubuntu3.1
+              libtiff5:
+                  ----------
+                  new:
+                      4.3.0-6ubuntu0.3
+                  old:
+                      4.3.0-6
+              libtirpc-common:
+                  ----------
+                  new:
+                      1.3.2-2ubuntu0.1
+                  old:
+                      1.3.2-2build1
+              libtirpc3:
+                  ----------
+                  new:
+                      1.3.2-2ubuntu0.1
+                  old:
+                      1.3.2-2build1
+              libusb-1.0-0:
+                  ----------
+                  new:
+                      2:1.0.25-1ubuntu2
+                  old:
+                      2:1.0.25-1ubuntu1
+              libwayland-client0:
+                  ----------
+                  new:
+                      1.20.0-1ubuntu0.1
+                  old:
+                      1.20.0-1
+              libwayland-cursor0:
+                  ----------
+                  new:
+                      1.20.0-1ubuntu0.1
+                  old:
+                      1.20.0-1
+              libwayland-egl1:
+                  ----------
+                  new:
+                      1.20.0-1ubuntu0.1
+                  old:
+                      1.20.0-1
+              libwayland-server0:
+                  ----------
+                  new:
+                      1.20.0-1ubuntu0.1
+                  old:
+                      1.20.0-1
+              libwbclient0:
+                  ----------
+                  new:
+                      2:4.15.9+dfsg-0ubuntu0.3
+                  old:
+                      2:4.15.5~dfsg-0ubuntu5
+              libwinpr2-2:
+                  ----------
+                  new:
+                      2.6.1+dfsg1-3ubuntu2.3
+                  old:
+                      2.6.1+dfsg1-3ubuntu1
+              libxatracker2:
+                  ----------
+                  new:
+                      22.0.5-0ubuntu0.1
+                  old:
+                      22.0.1-1ubuntu2
+              libxml2:
+                  ----------
+                  new:
+                      2.9.13+dfsg-1ubuntu0.2
+                  old:
+                      2.9.13+dfsg-1build1
+              libxslt1.1:
+                  ----------
+                  new:
+                      1.1.34-4ubuntu0.22.04.1
+                  old:
+                      1.1.34-4build2
+              linux-firmware:
+                  ----------
+                  new:
+                      20220329.git681281e4-0ubuntu3.7
+                  old:
+                      20220329.git681281e4-0ubuntu1
+              locales:
+                  ----------
+                  new:
+                      2.35-0ubuntu3.1
+                  old:
+                      2.35-0ubuntu3
+              login:
+                  ----------
+                  new:
+                      1:4.8.1-2ubuntu2.1
+                  old:
+                      1:4.8.1-2ubuntu2
+              logrotate:
+                  ----------
+                  new:
+                      3.19.0-1ubuntu1.1
+                  old:
+                      3.19.0-1ubuntu1
+              logsave:
+                  ----------
+                  new:
+                      1.46.5-2ubuntu1.1
+                  old:
+                      1.46.5-2ubuntu1
+              mesa-vulkan-drivers:
+                  ----------
+                  new:
+                      22.0.5-0ubuntu0.1
+                  old:
+                      22.0.1-1ubuntu2
+              motd-news-config:
+                  ----------
+                  new:
+                      12ubuntu4.2
+                  old:
+                      12ubuntu4
+              multipath-tools:
+                  ----------
+                  new:
+                      0.8.8-1ubuntu1.22.04.1
+                  old:
+                      0.8.8-1ubuntu1
+              mutter-common:
+                  ----------
+                  new:
+                      42.5-0ubuntu1
+                  old:
+                      42.0-3ubuntu2
+              nautilus:
+                  ----------
+                  new:
+                      1:42.2-0ubuntu1
+                  old:
+                      1:42.0-1ubuntu2
+              nautilus-data:
+                  ----------
+                  new:
+                      1:42.2-0ubuntu1
+                  old:
+                      1:42.0-1ubuntu2
+              needrestart:
+                  ----------
+                  new:
+                      3.5-5ubuntu2.1
+                  old:
+                      3.5-5ubuntu2
+              netplan.io:
+                  ----------
+                  new:
+                      0.105-0ubuntu2~22.04.1
+                  old:
+                      0.104-0ubuntu2
+              network-manager:
+                  ----------
+                  new:
+                      1.36.6-0ubuntu2
+                  old:
+                      1.36.4-2ubuntu1
+              network-manager-config-connectivity-ubuntu:
+                  ----------
+                  new:
+                      1.36.6-0ubuntu2
+                  old:
+                      1.36.4-2ubuntu1
+              nftables:
+                  ----------
+                  new:
+                      1.0.2-1ubuntu3
+                  old:
+                      1.0.2-1ubuntu2
+              ntfs-3g:
+                  ----------
+                  new:
+                      1:2021.8.22-3ubuntu1.2
+                  old:
+                      1:2021.8.22-3ubuntu1
+              open-vm-tools:
+                  ----------
+                  new:
+                      2:11.3.5-1ubuntu4.1
+                  old:
+                      2:11.3.5-1ubuntu4
+              openssl:
+                  ----------
+                  new:
+                      3.0.2-0ubuntu1.7
+                  old:
+                      3.0.2-0ubuntu1.1
+              openvpn:
+                  ----------
+                  new:
+                      2.5.5-1ubuntu3.1
+                  old:
+                      2.5.5-1ubuntu3
+              orca:
+                  ----------
+                  new:
+                      42.0-1ubuntu2
+                  old:
+                      42.0-1ubuntu1
+              passwd:
+                  ----------
+                  new:
+                      1:4.8.1-2ubuntu2.1
+                  old:
+                      1:4.8.1-2ubuntu2
+              perl:
+                  ----------
+                  new:
+                      5.34.0-3ubuntu1.1
+                  old:
+                      5.34.0-3ubuntu1
+              perl-base:
+                  ----------
+                  new:
+                      5.34.0-3ubuntu1.1
+                  old:
+                      5.34.0-3ubuntu1
+              perl-modules-5.34:
+                  ----------
+                  new:
+                      5.34.0-3ubuntu1.1
+                  old:
+                      5.34.0-3ubuntu1
+              pipewire:
+                  ----------
+                  new:
+                      0.3.48-1ubuntu2
+                  old:
+                      0.3.48-1ubuntu1
+              pipewire-bin:
+                  ----------
+                  new:
+                      0.3.48-1ubuntu2
+                  old:
+                      0.3.48-1ubuntu1
+              poppler-utils:
+                  ----------
+                  new:
+                      22.02.0-2ubuntu0.1
+                  old:
+                      22.02.0-2
+              pulseaudio:
+                  ----------
+                  new:
+                      1:15.99.1+dfsg1-1ubuntu2
+                  old:
+                      1:15.99.1+dfsg1-1ubuntu1
+              pulseaudio-module-bluetooth:
+                  ----------
+                  new:
+                      1:15.99.1+dfsg1-1ubuntu2
+                  old:
+                      1:15.99.1+dfsg1-1ubuntu1
+              pulseaudio-utils:
+                  ----------
+                  new:
+                      1:15.99.1+dfsg1-1ubuntu2
+                  old:
+                      1:15.99.1+dfsg1-1ubuntu1
+              python-apt-common:
+                  ----------
+                  new:
+                      2.3.0ubuntu2.1
+                  old:
+                      2.3.0ubuntu2
+              python3:
+                  ----------
+                  new:
+                      3.10.6-1~22.04
+                  old:
+                      3.10.4-0ubuntu2
+              python3-apt:
+                  ----------
+                  new:
+                      2.3.0ubuntu2.1
+                  old:
+                      2.3.0ubuntu2
+              python3-brlapi:
+                  ----------
+                  new:
+                      6.4-4ubuntu3
+                  old:
+                      6.4-4ubuntu2
+              python3-distupgrade:
+                  ----------
+                  new:
+                      1:22.04.15
+                  old:
+                      1:22.04.10
+              python3-distutils:
+                  ----------
+                  new:
+                      3.10.6-1~22.04
+                  old:
+                      3.10.4-0ubuntu1
+              python3-gdbm:
+                  ----------
+                  new:
+                      3.10.6-1~22.04
+                  old:
+                      3.10.4-0ubuntu1
+              python3-gi:
+                  ----------
+                  new:
+                      3.42.1-0ubuntu1
+                  old:
+                      3.42.0-3build1
+              python3-gi-cairo:
+                  ----------
+                  new:
+                      3.42.1-0ubuntu1
+                  old:
+                      3.42.0-3build1
+              python3-ldb:
+                  ----------
+                  new:
+                      2:2.4.4-0ubuntu0.1
+                  old:
+                      2:2.4.2-0ubuntu1
+              python3-lib2to3:
+                  ----------
+                  new:
+                      3.10.6-1~22.04
+                  old:
+                      3.10.4-0ubuntu1
+              python3-louis:
+                  ----------
+                  new:
+                      3.20.0-2ubuntu0.1
+                  old:
+                      3.20.0-2
+              python3-minimal:
+                  ----------
+                  new:
+                      3.10.6-1~22.04
+                  old:
+                      3.10.4-0ubuntu2
+              python3-pil:
+                  ----------
+                  new:
+                      9.0.1-1ubuntu0.1
+                  old:
+                      9.0.1-1build1
+              python3-speechd:
+                  ----------
+                  new:
+                      0.11.1-1ubuntu2
+                  old:
+                      0.11.1-1
+              python3-sss:
+                  ----------
+                  new:
+                      2.6.3-1ubuntu3.2
+                  old:
+                      2.6.3-1ubuntu3
+              python3.10:
+                  ----------
+                  new:
+                      3.10.6-1~22.04.2
+                  old:
+                      3.10.4-3
+              python3.10-minimal:
+                  ----------
+                  new:
+                      3.10.6-1~22.04.2
+                  old:
+                      3.10.4-3
+              rsync:
+                  ----------
+                  new:
+                      3.2.3-8ubuntu3.1
+                  old:
+                      3.2.3-8ubuntu3
+              samba-libs:
+                  ----------
+                  new:
+                      2:4.15.9+dfsg-0ubuntu0.3
+                  old:
+                      2:4.15.5~dfsg-0ubuntu5
+              speech-dispatcher:
+                  ----------
+                  new:
+                      0.11.1-1ubuntu2
+                  old:
+                      0.11.1-1
+              speech-dispatcher-audio-plugins:
+                  ----------
+                  new:
+                      0.11.1-1ubuntu2
+                  old:
+                      0.11.1-1
+              speech-dispatcher-espeak-ng:
+                  ----------
+                  new:
+                      0.11.1-1ubuntu2
+                  old:
+                      0.11.1-1
+              sssd:
+                  ----------
+                  new:
+                      2.6.3-1ubuntu3.2
+                  old:
+                      2.6.3-1ubuntu3
+              sssd-ad:
+                  ----------
+                  new:
+                      2.6.3-1ubuntu3.2
+                  old:
+                      2.6.3-1ubuntu3
+              sssd-ad-common:
+                  ----------
+                  new:
+                      2.6.3-1ubuntu3.2
+                  old:
+                      2.6.3-1ubuntu3
+              sssd-common:
+                  ----------
+                  new:
+                      2.6.3-1ubuntu3.2
+                  old:
+                      2.6.3-1ubuntu3
+              sssd-ipa:
+                  ----------
+                  new:
+                      2.6.3-1ubuntu3.2
+                  old:
+                      2.6.3-1ubuntu3
+              sssd-krb5:
+                  ----------
+                  new:
+                      2.6.3-1ubuntu3.2
+                  old:
+                      2.6.3-1ubuntu3
+              sssd-krb5-common:
+                  ----------
+                  new:
+                      2.6.3-1ubuntu3.2
+                  old:
+                      2.6.3-1ubuntu3
+              sssd-ldap:
+                  ----------
+                  new:
+                      2.6.3-1ubuntu3.2
+                  old:
+                      2.6.3-1ubuntu3
+              sssd-proxy:
+                  ----------
+                  new:
+                      2.6.3-1ubuntu3.2
+                  old:
+                      2.6.3-1ubuntu3
+              sudo:
+                  ----------
+                  new:
+                      1.9.9-1ubuntu2.1
+                  old:
+                      1.9.9-1ubuntu2
+              systemd:
+                  ----------
+                  new:
+                      249.11-0ubuntu3.6
+                  old:
+                      249.11-0ubuntu3.1
+              systemd-oomd:
+                  ----------
+                  new:
+                      249.11-0ubuntu3.6
+                  old:
+                      249.11-0ubuntu3.1
+              systemd-sysv:
+                  ----------
+                  new:
+                      249.11-0ubuntu3.6
+                  old:
+                      249.11-0ubuntu3.1
+              systemd-timesyncd:
+                  ----------
+                  new:
+                      249.11-0ubuntu3.6
+                  old:
+                      249.11-0ubuntu3.1
+              thermald:
+                  ----------
+                  new:
+                      2.4.9-1ubuntu0.1
+                  old:
+                      2.4.9-1
+              tmux:
+                  ----------
+                  new:
+                      3.2a-4ubuntu0.1
+                  old:
+                      3.2a-4build1
+              tzdata:
+                  ----------
+                  new:
+                      2022g-0ubuntu0.22.04.1
+                  old:
+                      2022a-0ubuntu1
+              ubuntu-advantage-desktop-daemon:
+                  ----------
+                  new:
+                      1.9~22.04.1
+                  old:
+                      1.8
+              ubuntu-advantage-tools:
+                  ----------
+                  new:
+                      27.12~22.04.1
+                  old:
+                      27.7~22.04.1
+              ubuntu-release-upgrader-core:
+                  ----------
+                  new:
+                      1:22.04.15
+                  old:
+                      1:22.04.10
+              ubuntu-release-upgrader-gtk:
+                  ----------
+                  new:
+                      1:22.04.15
+                  old:
+                      1:22.04.10
+              unzip:
+                  ----------
+                  new:
+                      6.0-26ubuntu3.1
+                  old:
+                      6.0-26ubuntu3
+              vim:
+                  ----------
+                  new:
+                      2:8.2.3995-1ubuntu2.1
+                  old:
+                      2:8.2.3995-1ubuntu2
+              vim-common:
+                  ----------
+                  new:
+                      2:8.2.3995-1ubuntu2.1
+                  old:
+                      2:8.2.3995-1ubuntu2
+              vim-runtime:
+                  ----------
+                  new:
+                      2:8.2.3995-1ubuntu2.1
+                  old:
+                      2:8.2.3995-1ubuntu2
+              vim-tiny:
+                  ----------
+                  new:
+                      2:8.2.3995-1ubuntu2.1
+                  old:
+                      2:8.2.3995-1ubuntu2
+              wireless-regdb:
+                  ----------
+                  new:
+                      2022.06.06-0ubuntu1~22.04.1
+                  old:
+                      2021.08.28-0ubuntu1
+              wpasupplicant:
+                  ----------
+                  new:
+                      2:2.10-6ubuntu2
+                  old:
+                      2:2.10-6
+              xbrlapi:
+                  ----------
+                  new:
+                      6.4-4ubuntu3
+                  old:
+                      6.4-4ubuntu2
+              xdg-desktop-portal:
+                  ----------
+                  new:
+                      1.14.4-1ubuntu2~22.04.1
+                  old:
+                      1.14.3-0ubuntu2
+              xdg-desktop-portal-gnome:
+                  ----------
+                  new:
+                      42.1-0ubuntu1
+                  old:
+                      42.0.1-1ubuntu2
+              xdg-utils:
+                  ----------
+                  new:
+                      1.1.3-4.1ubuntu3~22.04.1
+                  old:
+                      1.1.3-4.1ubuntu1
+              xserver-common:
+                  ----------
+                  new:
+                      2:21.1.3-2ubuntu2.5
+                  old:
+                      2:21.1.3-2ubuntu2
+              xserver-xephyr:
+                  ----------
+                  new:
+                      2:21.1.3-2ubuntu2.5
+                  old:
+                      2:21.1.3-2ubuntu2
+              xserver-xorg-core:
+                  ----------
+                  new:
+                      2:21.1.3-2ubuntu2.5
+                  old:
+                      2:21.1.3-2ubuntu2
+              xserver-xorg-legacy:
+                  ----------
+                  new:
+                      2:21.1.3-2ubuntu2.5
+                  old:
+                      2:21.1.3-2ubuntu2
+              xserver-xorg-video-amdgpu:
+                  ----------
+                  new:
+                      22.0.0-1ubuntu0.1
+                  old:
+                      22.0.0-1build1
+              xserver-xorg-video-ati:
+                  ----------
+                  new:
+                      1:19.1.0-2ubuntu1
+                  old:
+                      1:19.1.0-2build3
+              xserver-xorg-video-radeon:
+                  ----------
+                  new:
+                      1:19.1.0-2ubuntu1
+                  old:
+                      1:19.1.0-2build3
+              xwayland:
+                  ----------
+                  new:
+                      2:22.1.1-1ubuntu0.4
+                  old:
+                      2:22.1.1-1
+              xxd:
+                  ----------
+                  new:
+                      2:8.2.3995-1ubuntu2.1
+                  old:
+                      2:8.2.3995-1ubuntu2
+              zenity:
+                  ----------
+                  new:
+                      3.42.1-0ubuntu1
+                  old:
+                      3.42.0-1
+              zenity-common:
+                  ----------
+                  new:
+                      3.42.1-0ubuntu1
+                  old:
+                      3.42.0-1
+              zlib1g:
+                  ----------
+                  new:
+                      1:1.2.11.dfsg-2ubuntu9.2
+                  old:
+                      1:1.2.11.dfsg-2ubuntu9
+----------
+          ID: needed_packages
+    Function: pkg.installed
+      Result: True
+     Comment: 9 targeted packages were installed/updated.
+              The following packages were already installed: git, usbutils, curl
+     Started: 08:10:06.355373
+    Duration: 156646.834 ms
+     Changes:   
+              ----------
+              adb:
+                  ----------
+                  new:
+                      1:10.0.0+r36-9
+                  old:
+              android-libadb:
+                  ----------
+                  new:
+                      1:10.0.0+r36-9
+                  old:
+              android-libbase:
+                  ----------
+                  new:
+                      1:10.0.0+r36-9
+                  old:
+              android-libboringssl:
+                  ----------
+                  new:
+                      10.0.0+r36-1
+                  old:
+              android-libcrypto-utils:
+                  ----------
+                  new:
+                      1:10.0.0+r36-9
+                  old:
+              android-libcutils:
+                  ----------
+                  new:
+                      1:10.0.0+r36-9
+                  old:
+              android-libetc1:
+                  ----------
+                  new:
+                      1:10.0.0+r36-1
+                  old:
+              android-libext4-utils:
+                  ----------
+                  new:
+                      10.0.0+r36+ds-2
+                  old:
+              android-liblog:
+                  ----------
+                  new:
+                      1:10.0.0+r36-9
+                  old:
+              android-libsparse:
+                  ----------
+                  new:
+                      1:10.0.0+r36-9
+                  old:
+              android-libunwind:
+                  ----------
+                  new:
+                      10.0.0+r36-4
+                  old:
+              android-libziparchive:
+                  ----------
+                  new:
+                      1:10.0.0+r36-9
+                  old:
+              android-sdk-platform-tools:
+                  ----------
+                  new:
+                      28.0.2+6
+                  old:
+              android-sdk-platform-tools-common:
+                  ----------
+                  new:
+                      28.0.2+6
+                  old:
+              ca-certificates-java:
+                  ----------
+                  new:
+                      20190909
+                  old:
+              default-jre:
+                  ----------
+                  new:
+                      2:1.11-72build2
+                  old:
+              default-jre-headless:
+                  ----------
+                  new:
+                      2:1.11-72build2
+                  old:
+              dmtracedump:
+                  ----------
+                  new:
+                      10.0.0+r36-3
+                  old:
+              dnsutils:
+                  ----------
+                  new:
+                      1:9.18.1-1ubuntu1.2
+                  old:
+              etc1tool:
+                  ----------
+                  new:
+                      10.0.0+r36-1
+                  old:
+              f2fs-tools:
+                  ----------
+                  new:
+                      1.14.0-2build1
+                  old:
+              fastboot:
+                  ----------
+                  new:
+                      1:10.0.0+r36-9
+                  old:
+              firebird3.0-common:
+                  ----------
+                  new:
+                      3.0.8.33535.ds4-1ubuntu2
+                  old:
+              firebird3.0-common-doc:
+                  ----------
+                  new:
+                      3.0.8.33535.ds4-1ubuntu2
+                  old:
+              firebird3.0-server-core:
+                  ----------
+                  new:
+                      3.0.8.33535.ds4-1ubuntu2
+                  old:
+              firebird3.0-utils:
+                  ----------
+                  new:
+                      3.0.8.33535.ds4-1ubuntu2
+                  old:
+              fonts-crosextra-caladea:
+                  ----------
+                  new:
+                      20130214-2.1
+                  old:
+              fonts-crosextra-carlito:
+                  ----------
+                  new:
+                      20130920-1.1
+                  old:
+              fonts-dejavu:
+                  ----------
+                  new:
+                      2.37-2build1
+                  old:
+              fonts-dejavu-extra:
+                  ----------
+                  new:
+                      2.37-2build1
+                  old:
+              fonts-linuxlibertine:
+                  ----------
+                  new:
+                      5.3.0-6
+                  old:
+              fonts-noto-core:
+                  ----------
+                  new:
+                      20201225-1build1
+                  old:
+              fonts-noto-extra:
+                  ----------
+                  new:
+                      20201225-1build1
+                  old:
+              fonts-noto-ui-core:
+                  ----------
+                  new:
+                      20201225-1build1
+                  old:
+              fonts-sil-gentium:
+                  ----------
+                  new:
+                      20081126:1.03-4
+                  old:
+              fonts-sil-gentium-basic:
+                  ----------
+                  new:
+                      1.102-1.1
+                  old:
+              graphviz:
+                  ----------
+                  new:
+                      2.42.2-6
+                  old:
+              hprof-conv:
+                  ----------
+                  new:
+                      10.0.0+r36-3
+                  old:
+              java-common:
+                  ----------
+                  new:
+                      0.72build2
+                  old:
+              libabw-0.1-1:
+                  ----------
+                  new:
+                      0.1.3-1build3
+                  old:
+              libann0:
+                  ----------
+                  new:
+                      1.1.2+doc-7build1
+                  old:
+              libatk-wrapper-java:
+                  ----------
+                  new:
+                      0.38.0-5build1
+                  old:
+              libatk-wrapper-java-jni:
+                  ----------
+                  new:
+                      0.38.0-5build1
+                  old:
+              libblas3:
+                  ----------
+                  new:
+                      3.10.0-2ubuntu1
+                  old:
+              libboost-filesystem1.74.0:
+                  ----------
+                  new:
+                      1.74.0-14ubuntu3
+                  old:
+              libboost-iostreams1.74.0:
+                  ----------
+                  new:
+                      1.74.0-14ubuntu3
+                  old:
+              libboost-locale1.74.0:
+                  ----------
+                  new:
+                      1.74.0-14ubuntu3
+                  old:
+              libboost-thread1.74.0:
+                  ----------
+                  new:
+                      1.74.0-14ubuntu3
+                  old:
+              libbsh-java:
+                  ----------
+                  new:
+                      2.0b4-20
+                  old:
+              libcdr-0.1-1:
+                  ----------
+                  new:
+                      0.1.6-2build2
+                  old:
+              libcdt5:
+                  ----------
+                  new:
+                      2.42.2-6
+                  old:
+              libcgraph6:
+                  ----------
+                  new:
+                      2.42.2-6
+                  old:
+              libclucene-contribs1v5:
+                  ----------
+                  new:
+                      2.3.3.4+dfsg-1ubuntu5
+                  old:
+              libclucene-core1v5:
+                  ----------
+                  new:
+                      2.3.3.4+dfsg-1ubuntu5
+                  old:
+              libcolamd2:
+                  ----------
+                  new:
+                      1:5.10.1+dfsg-4build1
+                  old:
+              libe-book-0.1-1:
+                  ----------
+                  new:
+                      0.1.3-2build2
+                  old:
+              libel-api-java:
+                  ----------
+                  new:
+                      3.0.0-3
+                  old:
+              libeot0:
+                  ----------
+                  new:
+                      0.01-5build2
+                  old:
+              libepubgen-0.1-1:
+                  ----------
+                  new:
+                      0.1.1-1ubuntu5
+                  old:
+              libetonyek-0.1-1:
+                  ----------
+                  new:
+                      0.1.10-3build1
+                  old:
+              libexttextcat-2.0-0:
+                  ----------
+                  new:
+                      3.4.5-1build2
+                  old:
+              libexttextcat-data:
+                  ----------
+                  new:
+                      3.4.5-1build2
+                  old:
+              libfbclient2:
+                  ----------
+                  new:
+                      3.0.8.33535.ds4-1ubuntu2
+                  old:
+              libfreehand-0.1-1:
+                  ----------
+                  new:
+                      0.1.2-3build2
+                  old:
+              libgpgmepp6:
+                  ----------
+                  new:
+                      1.16.0-1.2ubuntu4
+                  old:
+              libgts-0.7-5:
+                  ----------
+                  new:
+                      0.7.6+darcs121130-5
+                  old:
+              libgts-bin:
+                  ----------
+                  new:
+                      0.7.6+darcs121130-5
+                  old:
+              libgvc6:
+                  ----------
+                  new:
+                      2.42.2-6
+                  old:
+              libgvpr2:
+                  ----------
+                  new:
+                      2.42.2-6
+                  old:
+              libhsqldb1.8.0-java:
+                  ----------
+                  new:
+                      1.8.0.10+dfsg-11
+                  old:
+              libib-util:
+                  ----------
+                  new:
+                      3.0.8.33535.ds4-1ubuntu2
+                  old:
+              libjsp-api-java:
+                  ----------
+                  new:
+                      2.3.4-3
+                  old:
+              liblab-gamut1:
+                  ----------
+                  new:
+                      2.42.2-6
+                  old:
+              liblangtag-common:
+                  ----------
+                  new:
+                      0.6.3-2ubuntu1
+                  old:
+              liblangtag1:
+                  ----------
+                  new:
+                      0.6.3-2ubuntu1
+                  old:
+              liblibreoffice-java:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              liblinear4:
+                  ----------
+                  new:
+                      2.3.0+dfsg-5
+                  old:
+              libmhash2:
+                  ----------
+                  new:
+                      0.9.9.9-9build2
+                  old:
+              libmspub-0.1-1:
+                  ----------
+                  new:
+                      0.1.4-3build3
+                  old:
+              libmwaw-0.3-3:
+                  ----------
+                  new:
+                      0.3.21-1build1
+                  old:
+              libmysqlclient21:
+                  ----------
+                  new:
+                      8.0.31-0ubuntu0.22.04.1
+                  old:
+              libmythes-1.2-0:
+                  ----------
+                  new:
+                      2:1.2.4-4build1
+                  old:
+              libodfgen-0.1-1:
+                  ----------
+                  new:
+                      0.1.8-2build2
+                  old:
+              liborcus-0.17-0:
+                  ----------
+                  new:
+                      0.17.2-2
+                  old:
+              liborcus-parser-0.17-0:
+                  ----------
+                  new:
+                      0.17.2-2
+                  old:
+              libpagemaker-0.0-0:
+                  ----------
+                  new:
+                      0.0.4-1build3
+                  old:
+              libpathplan4:
+                  ----------
+                  new:
+                      2.42.2-6
+                  old:
+              libpq5:
+                  ----------
+                  new:
+                      14.5-0ubuntu0.22.04.1
+                  old:
+              libraptor2-0:
+                  ----------
+                  new:
+                      2.0.15-0ubuntu4
+                  old:
+              librasqal3:
+                  ----------
+                  new:
+                      0.9.33-0.2ubuntu1
+                  old:
+              librdf0:
+                  ----------
+                  new:
+                      1.0.17-1.1ubuntu3
+                  old:
+              libreoffice:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libreoffice-base:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libreoffice-base-core:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libreoffice-base-drivers:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libreoffice-calc:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libreoffice-common:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libreoffice-core:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libreoffice-draw:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libreoffice-gnome:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libreoffice-gtk3:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libreoffice-impress:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libreoffice-java-common:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libreoffice-math:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libreoffice-nlpsolver:
+                  ----------
+                  new:
+                      0.9+LibO7.3.7-0ubuntu0.22.04.1
+                  old:
+              libreoffice-report-builder:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libreoffice-report-builder-bin:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libreoffice-script-provider-bsh:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libreoffice-script-provider-js:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libreoffice-script-provider-python:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libreoffice-sdbc-firebird:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libreoffice-sdbc-hsqldb:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libreoffice-sdbc-mysql:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libreoffice-sdbc-postgresql:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libreoffice-style-elementary:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libreoffice-style-yaru:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libreoffice-wiki-publisher:
+                  ----------
+                  new:
+                      1.2.0+LibO7.3.7-0ubuntu0.22.04.1
+                  old:
+              libreoffice-writer:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              librevenge-0.0-0:
+                  ----------
+                  new:
+                      0.0.4-6ubuntu7
+                  old:
+              libservlet-api-java:
+                  ----------
+                  new:
+                      4.0.1-2
+                  old:
+              libservlet3.1-java:
+                  ----------
+                  new:
+                      1:4.0.1-2
+                  old:
+              libsuitesparseconfig5:
+                  ----------
+                  new:
+                      1:5.10.1+dfsg-4build1
+                  old:
+              libtommath1:
+                  ----------
+                  new:
+                      1.2.0-6build3
+                  old:
+              libuno-cppu3:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libuno-cppuhelpergcc3-3:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libuno-purpenvhelpergcc3-3:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libuno-sal3:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libuno-salhelpergcc3-3:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libunoloader-java:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              libvisio-0.1-1:
+                  ----------
+                  new:
+                      0.1.7-1build5
+                  old:
+              libwebsocket-api-java:
+                  ----------
+                  new:
+                      1.1-2
+                  old:
+              libwpd-0.10-10:
+                  ----------
+                  new:
+                      0.10.3-2build1
+                  old:
+              libwpg-0.3-3:
+                  ----------
+                  new:
+                      0.3.3-1build3
+                  old:
+              libwps-0.4-4:
+                  ----------
+                  new:
+                      0.4.12-2build1
+                  old:
+              libxmlsec1-nss:
+                  ----------
+                  new:
+                      1.2.33-1build2
+                  old:
+              libyajl2:
+                  ----------
+                  new:
+                      2.1.0-3build2
+                  old:
+              lp-solve:
+                  ----------
+                  new:
+                      5.5.2.5-2build2
+                  old:
+              lua-lpeg:
+                  ----------
+                  new:
+                      1.0.2-1
+                  old:
+              micro:
+                  ----------
+                  new:
+                      2.0.9-1build1
+                  old:
+              mysql-common:
+                  ----------
+                  new:
+                      5.8+1.0.8
+                  old:
+              net-tools:
+                  ----------
+                  new:
+                      1.60+git20181103.0eebece-1ubuntu5
+                  old:
+              nmap:
+                  ----------
+                  new:
+                      7.91+dfsg1+really7.80+dfsg1-2build1
+                  old:
+              nmap-common:
+                  ----------
+                  new:
+                      7.91+dfsg1+really7.80+dfsg1-2build1
+                  old:
+              openjdk-11-jre:
+                  ----------
+                  new:
+                      11.0.17+8-1ubuntu2~22.04
+                  old:
+              openjdk-11-jre-headless:
+                  ----------
+                  new:
+                      11.0.17+8-1ubuntu2~22.04
+                  old:
+              p7zip:
+                  ----------
+                  new:
+                      16.02+dfsg-8
+                  old:
+              p7zip-full:
+                  ----------
+                  new:
+                      16.02+dfsg-8
+                  old:
+              pwgen:
+                  ----------
+                  new:
+                      2.08-2build1
+                  old:
+              python3-blinker:
+                  ----------
+                  new:
+                      1.4+dfsg1-0.4
+                  old:
+              python3-cryptography:
+                  ----------
+                  new:
+                      3.4.8-1ubuntu2
+                  old:
+              python3-httplib2:
+                  ----------
+                  new:
+                      0.20.2-2
+                  old:
+              python3-jeepney:
+                  ----------
+                  new:
+                      0.7.1-3
+                  old:
+              python3-jwt:
+                  ----------
+                  new:
+                      2.3.0-1ubuntu0.2
+                  old:
+              python3-keyring:
+                  ----------
+                  new:
+                      23.5.0-1
+                  old:
+              python3-launchpadlib:
+                  ----------
+                  new:
+                      1.10.16-1
+                  old:
+              python3-lazr.restfulclient:
+                  ----------
+                  new:
+                      0.14.4-1
+                  old:
+              python3-lazr.uri:
+                  ----------
+                  new:
+                      1.0.6-2
+                  old:
+              python3-oauthlib:
+                  ----------
+                  new:
+                      3.2.0-1ubuntu0.1
+                  old:
+              python3-pyparsing:
+                  ----------
+                  new:
+                      2.4.7-1
+                  old:
+              python3-secretstorage:
+                  ----------
+                  new:
+                      3.3.1-1
+                  old:
+              python3-software-properties:
+                  ----------
+                  new:
+                      0.99.22.3
+                  old:
+              python3-uno:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              python3-wadllib:
+                  ----------
+                  new:
+                      1.3.6-1
+                  old:
+              software-properties-common:
+                  ----------
+                  new:
+                      0.99.22.3
+                  old:
+              sqlite3:
+                  ----------
+                  new:
+                      3.37.2-2ubuntu0.1
+                  old:
+              uno-libs-private:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              ure:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              ure-java:
+                  ----------
+                  new:
+                      1:7.3.7-0ubuntu0.22.04.1
+                  old:
+              xclip:
+                  ----------
+                  new:
+                      0.13-2
+                  old:
+----------
+          ID: add_firefox_repo
+    Function: cmd.run
+        Name: sudo add-apt-repository -y ppa:mozillateam/ppa
+      Result: True
+     Comment: Command "sudo add-apt-repository -y ppa:mozillateam/ppa" run
+     Started: 08:12:43.037697
+    Duration: 15885.357 ms
+     Changes:   
+              ----------
+              pid:
+                  69910
+              retcode:
+                  0
+              stderr:
+              stdout:
+                  Hit:1 http://de.archive.ubuntu.com/ubuntu jammy InRelease
+                  Get:2 https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu jammy InRelease [23.8 kB]
+                  Hit:3 http://de.archive.ubuntu.com/ubuntu jammy-updates InRelease
+                  Hit:4 http://de.archive.ubuntu.com/ubuntu jammy-backports InRelease
+                  Hit:5 http://de.archive.ubuntu.com/ubuntu jammy-security InRelease
+                  Get:6 https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu jammy/main amd64 Packages [33.8 kB]
+                  Get:7 https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu jammy/main Translation-en [7100 B]
+                  Fetched 64.7 kB in 1s (43.3 kB/s)
+                  Reading package lists...
+                  PPA publishes dbgsym, you may need to include 'main/debug' component
+                  Repository: 'deb https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu/ jammy main'
+                  Description:
+                  Mozilla Team's Firefox stable + 102 ESR and Thunderbird 102 stable builds
+                  
+                  Support for Ubuntu 16.04 ESM is included.
+                  More info: https://launchpad.net/~mozillateam/+archive/ubuntu/ppa
+                  Adding repository.
+                  Adding deb entry to /etc/apt/sources.list.d/mozillateam-ubuntu-ppa-jammy.list
+                  Adding disabled deb-src entry to /etc/apt/sources.list.d/mozillateam-ubuntu-ppa-jammy.list
+                  Adding key to /etc/apt/trusted.gpg.d/mozillateam-ubuntu-ppa.gpg with fingerprint 0AB215679C571D1C8325275B9BDB3D89CE49EC21
+----------
+          ID: firefox
+    Function: pkg.purged
+      Result: True
+     Comment: All specified packages are already absent
+     Started: 08:12:58.923547
+    Duration: 2.887 ms
+     Changes:   
+----------
+          ID: firefox-esr
+    Function: pkg.installed
+      Result: True
+     Comment: The following packages were installed/updated: firefox-esr
+     Started: 08:12:58.926660
+    Duration: 19709.205 ms
+     Changes:   
+              ----------
+              firefox-esr:
+                  ----------
+                  new:
+                      102.6.0esr+build1-0ubuntu0.22.04.1
+                  old:
+              xul-ext-ubufox:
+                  ----------
+                  new:
+                      3.4-0ubuntu1.17.10.1
+                  old:
+
+Summary for ubuntu-ws
+------------
+Succeeded: 6 (changed=5)
+Failed:    0
+------------
+Total states run:     6
+Total run time: 530.446 s
+windows-ws:
+----------
+          ID: echo Hello %COMPUTERNAME%!
+    Function: cmd.run
+      Result: True
+     Comment: Command "echo Hello %COMPUTERNAME%!" run
+     Started: 00:04:27.706220
+    Duration: 65.058 ms
+     Changes:   
+              ----------
+              pid:
+                  3704
+              retcode:
+                  0
+              stderr:
+              stdout:
+                  Hello IE11WIN10!
+----------
+          ID: pkg
+    Function: module.run
+        Name: pkg.refresh_db
+      Result: True
+     Comment: Module function pkg.refresh_db executed
+     Started: 00:04:27.788769
+    Duration: 1432.015 ms
+     Changes:   
+              ----------
+              ret:
+                  ----------
+                  failed:
+                      0
+                  success:
+                      0
+                  total:
+                      0
+----------
+          ID: install_software
+    Function: pkg.installed
+      Result: True
+     Comment: The following packages were installed/updated: libreoffice
+     Started: 00:04:47.361686
+    Duration: 601154.525 ms
+     Changes:   
+              ----------
+              libreoffice:
+                  ----------
+                  new:
+                      7.0.3.1
+                  old:
+
+Summary for windows-ws
+------------
+Succeeded: 3 (changed=3)
+Failed:    0
+------------
+Total states run:     3
+Total run time: 602.652 s
