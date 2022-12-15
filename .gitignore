@@ -1,1 +1,3 @@
 srv/salt/prod/win/repo-ng/
+vagrant_prod/.vagrant
+vagrant_dev/.vagrant
