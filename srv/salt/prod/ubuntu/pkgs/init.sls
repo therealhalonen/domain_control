@@ -1,6 +1,8 @@
 needed_packages:
   pkg.installed:
     - pkgs:
+# Dependency
+      - software-properties-common
 # Basic
       - micro
       - git
